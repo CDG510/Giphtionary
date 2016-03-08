@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+
+class StartGameViewController: UIViewController {
+    @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func startGameButton(sender: AnyObject) {
+        performSegueWithIdentifier("GamePlaySegue", sender: self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}

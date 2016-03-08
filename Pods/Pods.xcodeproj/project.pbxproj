@@ -1,0 +1,2237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B40AFC05477B495D4B37CEA4BDAE9190 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0139E1D306FC955B772DDC229160C083 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1828B0968DABBC2B4893AAE282164 /* UIColor+Chameleon.m */; };
+		03162F6FBBFF4775606AFC6444A3C7BC /* onepassword-extension-light@3x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8B3EE5C2B17510E940F43DAEE3F7F /* onepassword-extension-light@3x~compact.png */; };
+		07A44114017E12A2CF6A141C5185E25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		07CAFA798732E9A28892E8D39C03453F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFC6C6F213768B97EBC1BF7BB1E0F56 /* AVFoundation.framework */; };
+		097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1715F2AD67AE90F627ADD9FA78F0DCCC /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A49140678241829867000A84E017BF8 /* onepassword-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C8DFA1BCABB1BFBEF0912D87BED36C /* onepassword-toolbar.png */; };
+		0F83E9950D54B3325FBCD9102BA9130B /* onepassword-navbar-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B2F8F5C8C8ED14CEC5A455E4DA2C1F /* onepassword-navbar-light@2x.png */; };
+		0FBB724B8B2A45186D369029D8ACDB44 /* onepassword-extension@2x~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 214F7E72C073D98927A991106A74D9AC /* onepassword-extension@2x~regular.png */; };
+		11199893A6D07D07838445E56A0714CC /* JSONHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2A80D5295171E5E405D77A5B2CC27 /* JSONHelpers.swift */; };
+		1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 288AB0C38119C2A820DD36C318C03830 /* ChameleonConstants.m */; };
+		14166AE8334CDCEB4F4D8B069FBB554A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9946E3192B6AA0CD6D2C5EA7FFB4AF08 /* QuartzCore.framework */; };
+		15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 618689C7D36ADC8AC2CAAC6EF8681BD5 /* UIImage+ChameleonPrivate.m */; };
+		2487D9DAFF7FE4E943953D6E3580D422 /* Jukebox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35151723F90626F9BD6E5909F9C527DD /* Jukebox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248D322C656AF34659343CBA58050CB9 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580B7FFF5DA45F353CB218FF6910414 /* APIResponse.swift */; };
+		24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EDA66D321C6E799007D6043B5708FF /* NSArray+Chameleon.m */; };
+		26FA5443B32F7483713DF8E0336B9CDC /* Soundcloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E3578FFD547FB9B9DF669ACB65CE15 /* Soundcloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ED73A0C596B33D81D72C8F3A95B9ED6 /* JSONCodable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B0B79ED555675992CB894B24F22D96 /* JSONCodable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A2B36B70293F994100FECC117BFA83 /* SoundcloudWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256B2BA71DAA9D12EB85D3E8BC9BE56 /* SoundcloudWebViewController.swift */; };
+		35C7CCD30498B1E906C4A6D55BA64B05 /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F0D6C96D47EBF7646F52D95511D7CF /* UICKeyChainStore-dummy.m */; };
+		3AE2DFCD6C0B6AE90683CF65BC6B1C1D /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AA592730BE445DE833026BF926227 /* JSONDecodable.swift */; };
+		3C790EB1359E54F8439DA692321CF5DF /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A3E267B654C8E953706C7C6935B86 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3EB0E9735B1A31C2579D25F50398D2DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		40D45383808650597C2E20B0C2225523 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		4108050C9C89725C289960BBE136105D /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54D01E070BD2F3951AC87C353B6C64D /* UICKeyChainStore.framework */; };
+		410EA55906BCBD2E9BCB3746D0BB987B /* onepassword-extension-light~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 697F9460CD85B2C74B3145C9157A0A03 /* onepassword-extension-light~regular.png */; };
+		4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C9F1909809C5F7024A9B805222A01C /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BD1A9D810F01F53BFFC3490E258951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		496A88EAD147230905BA8D4D5E44474F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BC72513B4F083EBD010209D9308576 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BA31EB279827549BBEC8B680C6B7BD /* UINavigationController+Chameleon.m */; };
+		5048522FBB8A6B67E8388A95BD4FFAB5 /* UICKeyChainStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69863B829DF17AB309CEA43DB7DA01E7 /* UICKeyChainStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50C5C1A0687C4F77B57668E6E5552638 /* PlaylistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF085A6AE452395161214FE534FCC5E /* PlaylistRequest.swift */; };
+		5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = D121A38D7267C6EC89F52A92081FA6CD /* UIViewController+Chameleon.m */; };
+		54B09FB2AE2BEDA897AF3A9F05302BA4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01E7D6E43C826279A6EA303D18D6A3 /* Request.swift */; };
+		595E1874A400358DA6E786866ADE41A9 /* JSONTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCF08A1C255FA828C71A67CA9EF821 /* JSONTransformer.swift */; };
+		5AEF4B45858D2594CF083E20F185C94C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		5BFDD4A46F87D54A47D92ABF2F894F6C /* onepassword-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3189C5FC43826ADEB9ADD315C91C6EDA /* onepassword-button@2x.png */; };
+		5C33495C74FBC9D432B795F9ACC9DFF6 /* onepassword-extension-light@2x~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D0925BCD46F4D5A9425709031398BDB /* onepassword-extension-light@2x~regular.png */; };
+		5C6B42BC007CE112E798727FE31BD878 /* onepassword-button-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DCAA87842E3AF28CE25156C91A35C0 /* onepassword-button-light@2x.png */; };
+		5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 27AEEC452FEEB6839CBB785F12BCADF9 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D82D33832BD4FAC1E65868EDFD43318 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652FA4A35ADD4CF40FCCCD2601355434 /* Security.framework */; };
+		5EA4528128AC6CE7FFB87BC8CED7A67A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC69E08486C8111D862999DE0EBEEAFF /* UIKit.framework */; };
+		62E146B96CC76C574C55174CB934C049 /* 1PasswordExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D17CA49FA66776AFAE452FE2B6EB7B4 /* 1PasswordExtension-dummy.m */; };
+		64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEA2DDBA8D070B6C5C26AE8BE1C6B8D /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69C3E31732A84B840529DD362F2F3E2F /* onepassword-button-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAE82C3E99B5D72E52077E7E35EBDA5 /* onepassword-button-light.png */; };
+		6BAA6FD4735D64785B2B5571E4EDABE5 /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C6341F2E4D46CE194314FEC45B4DA5 /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE8C1B9466C946DB1F1EB846C18E9B6 /* JukeboxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047C6B228751CEFD1CB693011E2BFF /* JukeboxItem.swift */; };
+		6E46D538CA8C1D53C1819B8028AF91FC /* Soundcloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F551876BBE7B45BCF7964CB474E1288A /* Soundcloud-dummy.m */; };
+		6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6144670AA872F1D4B87538900CFD2F6D /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = AA18A100BA35B9C7F2D42B28347FCD56 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 938DA65C4CE57D36EBD938186AB72262 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EAE3B004E8867CB16ECA3BA219D54B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 59662E0C78A29DF4C568EB1ABCF3AF20 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8161C5BAC6975FCDF19BD18736CBE107 /* onepassword-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B0F11019A5F0FCA6330A534D5ECC76 /* onepassword-toolbar@3x.png */; };
+		81FB4787BB9DC7A6793401091F545360 /* onepassword-navbar-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA76353969EBB6ABEABDF8BB40395AEA /* onepassword-navbar-light@3x.png */; };
+		83D203A2301423766FAE8F94D07A5A51 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E325E95B6D8680F45FCA03499BB1D046 /* Enums.swift */; };
+		84170A779E7E5BFB8711667B43522EDA /* onepassword-extension-light~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A97727109CEBA6E8A38E5A93987AF06 /* onepassword-extension-light~compact.png */; };
+		8968C07D6412C29A06CDD21E176A8790 /* 1Password.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D944CEED3AB7C9AFD194F003E719BF0 /* 1Password.xcassets */; };
+		8B202458F38CC47C6EF6CD6E813702BB /* ImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB551AC4A736D20B6EFB919091FD1028 /* ImageURLs.swift */; };
+		91D18C03EB8F81B1C559E8D687ABFB07 /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44DEB56725F4003FEA279D4E82F9BE /* YouTubePlayer-dummy.m */; };
+		930B77CA1D67B57169666BA66FE3FE3E /* YTPlayer.html in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA91C5F71C0B19FD5BA7225F825C25 /* YTPlayer.html */; };
+		9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 66924B503BE93DE6FFD89BDD8610115D /* Chameleon_.m */; };
+		9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE2600D7FDED79727D0E5F7836E7E6A /* UILabel+Chameleon.m */; };
+		9CD81585A78B44D377171FCEDEFAA830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97890305EDE5BC7471DBD07802D07890 /* CoreGraphics.framework */; };
+		9DE39E915B1BD1524E76A6D46E552776 /* onepassword-extension~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = B84FE4B7B5EDE7E1E8A74B49CDCEC8FE /* onepassword-extension~compact.png */; };
+		9F0A21547FF606F1707B75D0B0ECD026 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA91C5F71C0B19FD5BA7225F825C25 /* YTPlayer.html */; };
+		A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A614AF396F2CD693B52ED749A42E2F3 /* ChameleonShorthand.swift */; };
+		A337A3F32CA3834EE1E8491F3BE97202 /* TrackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB37EDC857D8B35DAAB92FD302030680 /* TrackRequest.swift */; };
+		A39F57186D048200C5F590829521C1DE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C4B71DCF2DC262B7874C00B686BD2E /* MediaPlayer.framework */; };
+		A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B820D065A2206524E530BCD0CD8D1 /* UIButton+Chameleon.m */; };
+		A5D259BFCE4D8DABE6DBADCE8DCB0906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		A7E8FB4E56812F86EC0AD7535003E6D3 /* onepassword-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0976D57311E844543935C3668A4410 /* onepassword-toolbar@2x.png */; };
+		A89ECE1F5F4F9FF1D7B3E1C25627AEDB /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAA41BA37528C13D24987FF056CF4C /* YouTubePlayer.swift */; };
+		A8AC9B75344E79C0EB998ED1D1BABEAB /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D895D3827D2577644A5C8B8A8D028181 /* JSONEncodable.swift */; };
+		A9C8BBD485B6AE706640E9EA9249D39B /* onepassword-navbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A56EFD3D71049850800EEE39F6F69 /* onepassword-navbar@3x.png */; };
+		AE4B151EAF5003685962E5601C55F58A /* OnePasswordExtensionResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30F8BC5582909A0EFE40FC66329F2CF8 /* OnePasswordExtensionResources.bundle */; };
+		AF43BD13810A278AA11F311CDFFB0482 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5469CB3741C615EECAA7D90EC40F42 /* Jukebox.swift */; };
+		AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 868CF293967B6733143C97C24D8CA57F /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B11B7A22C629F8C1136E77515B2CDA02 /* onepassword-extension@2x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FBB5296D3DA90A43A237BBBD159102 /* onepassword-extension@2x~compact.png */; };
+		B54289A84A48604EE38881A0E071AD48 /* onepassword-extension~regular.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B2A2769E5ECBBEDDE2A88FC1DE2A19 /* onepassword-extension~regular.png */; };
+		B61B8ACD7135223233EA574580E3B040 /* onepassword-toolbar-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8EEB627EC30DC93747B470A5937120 /* onepassword-toolbar-light@2x.png */; };
+		B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 8393E3930A9D8DC19E848D988FE99444 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB88D887D294E965C380C6E3669DD68E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E412BE3A42D266595FCD11A963294A9 /* StringExtension.swift */; };
+		C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C6572F95B8949C472BAA68DB57A5D3 /* UIView+ChameleonPrivate.m */; };
+		C14990E1E8CBD1C88B83F4197E5EDCAB /* AudioPlayerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63EB64AC833FBFFE91CFEB8AA7E290AB /* AudioPlayerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C8ADFC9D3B2481D0DA4360F91E5B6B /* NSURLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9902B82CCDD197237A1E88235E991FF4 /* NSURLExtension.swift */; };
+		C25905BC41A24A6BB3B4639A751B3588 /* Soundcloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5F5B5988826594D407990DC2E93C67 /* Soundcloud.swift */; };
+		C32CF4DD337DE89B987C6119D8E74710 /* onepassword-navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA90B01842C069F1826AFB43E2A4381 /* onepassword-navbar@2x.png */; };
+		C589DB4417226B468473D077822D3CDE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEDE05100CEC5499F465C2D35B856D /* User.swift */; };
+		C5A532FBD3054F82E2B882033A2042ED /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6C8B2AC07C1E9CA6E8C9B1670BA826 /* Comment.swift */; };
+		C7387AA6DCA9F0EC8E9FCD7AF31A9673 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE592A120118EB8885E89374E9ADB2F /* UserRequest.swift */; };
+		C7C4011C944C1FA02B28566CE7070B34 /* JSONCodable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 645C688EC6920EE6EEA0CF64DE9B99B1 /* JSONCodable-dummy.m */; };
+		C812FCD023FD88F34DEF2FD7A5A8C628 /* AudioPlayerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC37A233B3929E548A24F7D33A92238 /* AudioPlayerSwift-dummy.m */; };
+		C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B3338899BEBCEB3AF38F4CA0EFEB01D5 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA055F7C7C352B1A1E177863F0AF11B6 /* onepassword-navbar-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D02DC428AC3E6957CB60035B1AA5915 /* onepassword-navbar-light.png */; };
+		CA08D69AE9A44F7770C90963CDA1DB31 /* JSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892A1738D04DB6093D592C82827A9377 /* JSONString.swift */; };
+		CA78601E72F73D54EFAC5E0502498473 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B97DAC64DC54E7F6A9AB8A6C1BEB7BC /* App.swift */; };
+		CB4A7A09049C12437382BB51FB2B519A /* onepassword-toolbar-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E5CBEADA725032AF98071014A666B78 /* onepassword-toolbar-light@3x.png */; };
+		CB9046510B96D8DBBF3E075C46A83906 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF109A9C675947B5460C97DBD476A986 /* JSONCodable.swift */; };
+		CC5FEAEB89DE59D36D674D0E9D52428C /* onepassword-toolbar-light.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EE1F219C02D0C449E5B8FA55C2582D /* onepassword-toolbar-light.png */; };
+		CEAF472964979C3218CF0AFB20703306 /* onepassword-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 417C8D837E0D0567FA9653C0708BB746 /* onepassword-button.png */; };
+		CED79DE801DE133B9FC1E7716D65EBF5 /* onepassword-button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47634E4040046F844150E8D38031F9CD /* onepassword-button@3x.png */; };
+		CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FDAC95DCCFA31B9FB8C258CF345CDE /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFFD48E4220941463F86A13BEB4594F /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BEBA21C51F8AFD7E083185A60520FD /* SearchQuery.swift */; };
+		D2695EDA18FBC82B847E57024DAF70FC /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D09D591BC203836CBC26055189A76D8 /* AudioPlayer.swift */; };
+		D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BAE2C499D04D96934EA08A532E9192 /* UIAppearance+Swift.m */; };
+		D31DB0BD0EB9B7E9E4F08ABEC0FC95FA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61C41FEAA089B2F7A9E44FF64B6E71C /* Track.swift */; };
+		D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = E7713CE1096C4C89E9C1F268F63D15AC /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9011BBFD2412EF953E6EAA0042C5956 /* Jukebox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EAE5D0D044F8E260A37249CCCC25B8 /* Jukebox-dummy.m */; };
+		D926FB7FB8DD8730060886BAF24CA93D /* Jukebox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3358DC0886862DFF42FFA04184452CB6 /* Jukebox.bundle */; };
+		DF0E4A2B45545137FB5294B838EE6A49 /* onepassword-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = B586CDD2B518F833D72C9760B3281219 /* onepassword-navbar.png */; };
+		E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461DEF01AA4296D2709EAB80DC85E42 /* UIColor+ChameleonPrivate.m */; };
+		E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F72C32B9DC7B29B8EE318A78436E491 /* ChameleonFramework-dummy.m */; };
+		E197C5199E24876F592836465AF6B2F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC69E08486C8111D862999DE0EBEEAFF /* UIKit.framework */; };
+		E35C17E5C254DD854CDB3A05B1F3A98A /* onepassword-extension@3x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = D29DAC20CF36E5FA073B0C28333487F7 /* onepassword-extension@3x~compact.png */; };
+		E35EA1D8888E4E09B38F11626329D650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		E3D4DD90A9FCD1B39949740D7CAB9C15 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC937FF7064724DC42B2AAE429D633 /* DictionaryExtension.swift */; };
+		E747D3457DA2D0D95C5C030983663674 /* onepassword-button-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4A7870858DFC53524227E983265CF0 /* onepassword-button-light@3x.png */; };
+		E7C7A7317124A1FEA09C8DFB95FACE7B /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65099158442BB867A36C3B13731B50 /* OnePasswordExtension.m */; };
+		E8C2F3B16383B02E0BA346D0481DB3F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */; };
+		EAE970E887C03DE9D99C0E18036B6FA9 /* OnePasswordExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC2EAA6A0B1F6238BD7D77B74E2B84 /* OnePasswordExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0C2C3033CF6258C842D2E7A261B2546 /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C7B4B5EFBDE2813F33116588589057 /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2FDD7AB9594BB2491C0FB601F5597F7 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A68C039C058B463C5149499B5CA0B /* Playlist.swift */; };
+		F3CC3404AEF00A07879F63BB016981E9 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13DF4F8ED58F8F58AC0EA6D1D535F775 /* OnePasswordExtension.framework */; };
+		F3E5C62D72C98FEDEDA619582108B1D7 /* onepassword-extension-light@2x~compact.png in Resources */ = {isa = PBXBuildFile; fileRef = AEF2B3D024573C00E26A2F3E8E141DB0 /* onepassword-extension-light@2x~compact.png */; };
+		F6B2D1720CCF6A5A35163A64C96154CA /* 1PasswordExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1947ACB8348554FEC9ACFF60C1BDCBB /* 1PasswordExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 905032C2FF272C96803E6AF7B229D7E0 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1240040C3414BA67F635DD5B4AC3A23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8B57B89BC28E74DBA035283E73E0107;
+			remoteInfo = 1PasswordExtension;
+		};
+		27ABF194DA237E9B2C2D94B5EC54F5C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F301E054CA059DDA46EC8E2E6CEC8252;
+			remoteInfo = UICKeyChainStore;
+		};
+		3A04694B89DA8C7E5C84307EFA673147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E5E429FD8DF65BBD725D20A21B106AB;
+			remoteInfo = YouTubePlayer;
+		};
+		56854AF2879742072596E7FFF5A97DE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC188E8B568E890080A137C1528744EF;
+			remoteInfo = Soundcloud;
+		};
+		71FAD750A9DD63CAB90023CE19A002C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244E052299C7C15FB82F0A69AE1A16D2;
+			remoteInfo = JSONCodable;
+		};
+		744F12B46E3C4B74D5422FA7D8545636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 914F2D3BE90F614A79B5AB1465E3CB54;
+			remoteInfo = Jukebox;
+		};
+		86C2C6FCEDF6C92B74D8E71282619351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8B57B89BC28E74DBA035283E73E0107;
+			remoteInfo = 1PasswordExtension;
+		};
+		91D39984D6AFE34D396B97B51136F409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F301E054CA059DDA46EC8E2E6CEC8252;
+			remoteInfo = UICKeyChainStore;
+		};
+		921AB2F74EA95232D72B0C59252E2B31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF62A25D3E480238C0D473193AB70325;
+			remoteInfo = "1PasswordExtension-OnePasswordExtensionResources";
+		};
+		AE4DAB193146A2D4099BDD1158BECF08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36325DFCBCB7959CC6D962AA1890B2E6;
+			remoteInfo = AudioPlayerSwift;
+		};
+		C9712C482C056463A252EC756A806954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8755411FBEB5C88938F94EFEB42DF28;
+			remoteInfo = "Jukebox-Jukebox";
+		};
+		D863B3B8A9E20E6E0B2BECDC3CE7E741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5172ACAB7FEA22813859DC97CA0AA16F;
+			remoteInfo = ChameleonFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019AA592730BE445DE833026BF926227 /* JSONDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = JSONCodable/JSONDecodable.swift; sourceTree = "<group>"; };
+		03EDA66D321C6E799007D6043B5708FF /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		0D0925BCD46F4D5A9425709031398BDB /* onepassword-extension-light@2x~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@2x~regular.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@2x~regular.png"; sourceTree = "<group>"; };
+		0DA8B3EE5C2B17510E940F43DAEE3F7F /* onepassword-extension-light@3x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@3x~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@3x~compact.png"; sourceTree = "<group>"; };
+		0E5CBEADA725032AF98071014A666B78 /* onepassword-toolbar-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light@3x.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light@3x.png"; sourceTree = "<group>"; };
+		0FFC6C6F213768B97EBC1BF7BB1E0F56 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		13DF4F8ED58F8F58AC0EA6D1D535F775 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = 1PasswordExtension.xcconfig; sourceTree = "<group>"; };
+		1715F2AD67AE90F627ADD9FA78F0DCCC /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		1906C420DBE5A0C511186E71507FB959 /* Soundcloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Soundcloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B2F8F5C8C8ED14CEC5A455E4DA2C1F /* onepassword-navbar-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light@2x.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light@2x.png"; sourceTree = "<group>"; };
+		19FDAC95DCCFA31B9FB8C258CF345CDE /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		1A0F2952BC481AED806A7084A66F4040 /* JSONCodable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONCodable-prefix.pch"; sourceTree = "<group>"; };
+		1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Jukebox.xcconfig; sourceTree = "<group>"; };
+		214F7E72C073D98927A991106A74D9AC /* onepassword-extension@2x~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@2x~regular.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@2x~regular.png"; sourceTree = "<group>"; };
+		23913E32E3B83F66BCAF6D5CE5A5DBDD /* Soundcloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Soundcloud.modulemap; sourceTree = "<group>"; };
+		27AEEC452FEEB6839CBB785F12BCADF9 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		27CB5B8E756E6DE5732AFC20F0426AA9 /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
+		288AB0C38119C2A820DD36C318C03830 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2E412BE3A42D266595FCD11A963294A9 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = sources/SoundcloudSDK/extension/StringExtension.swift; sourceTree = "<group>"; };
+		301E6A84A054BCD35F448F6E1A8BF4AF /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		30F8BC5582909A0EFE40FC66329F2CF8 /* OnePasswordExtensionResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePasswordExtensionResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FBB5296D3DA90A43A237BBBD159102 /* onepassword-extension@2x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@2x~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@2x~compact.png"; sourceTree = "<group>"; };
+		3189C5FC43826ADEB9ADD315C91C6EDA /* onepassword-button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button@2x.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button@2x.png"; sourceTree = "<group>"; };
+		3358DC0886862DFF42FFA04184452CB6 /* Jukebox.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jukebox.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F46D8356A5290664E16A89BBC3CA99 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35151723F90626F9BD6E5909F9C527DD /* Jukebox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jukebox-umbrella.h"; sourceTree = "<group>"; };
+		36C6572F95B8949C472BAA68DB57A5D3 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		38BA31EB279827549BBEC8B680C6B7BD /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		3A97727109CEBA6E8A38E5A93987AF06 /* onepassword-extension-light~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light~compact.png"; sourceTree = "<group>"; };
+		3ABA099C3806C607BE6D26CD44BA0FAB /* AudioPlayerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift-prefix.pch"; sourceTree = "<group>"; };
+		3B8A56EFD3D71049850800EEE39F6F69 /* onepassword-navbar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar@3x.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar@3x.png"; sourceTree = "<group>"; };
+		3C39D4D3C758A13B10F104E411666379 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		3F01E7D6E43C826279A6EA303D18D6A3 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = sources/SoundcloudSDK/request/Request.swift; sourceTree = "<group>"; };
+		3F3B820D065A2206524E530BCD0CD8D1 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		3F72C32B9DC7B29B8EE318A78436E491 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		40E7110874FAB07EF85BF4ED21407803 /* UICKeyChainStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICKeyChainStore.modulemap; sourceTree = "<group>"; };
+		410DBD14E1EB9E0AA0AB692257113ED0 /* Jukebox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Jukebox.modulemap; sourceTree = "<group>"; };
+		417C8D837E0D0567FA9653C0708BB746 /* onepassword-button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button.png"; sourceTree = "<group>"; };
+		42F0EC42FD7F011FE848CA4934CD93A8 /* JSONCodable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JSONCodable.modulemap; sourceTree = "<group>"; };
+		47634E4040046F844150E8D38031F9CD /* onepassword-button@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button@3x.png"; path = "1Password.xcassets/onepassword-button.imageset/onepassword-button@3x.png"; sourceTree = "<group>"; };
+		485C70CA7067CE33793D4A7A7D9EA44E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5F5B5988826594D407990DC2E93C67 /* Soundcloud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Soundcloud.swift; path = sources/SoundcloudSDK/soundcloud/Soundcloud.swift; sourceTree = "<group>"; };
+		4CC37A233B3929E548A24F7D33A92238 /* AudioPlayerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AudioPlayerSwift-dummy.m"; sourceTree = "<group>"; };
+		548A68C039C058B463C5149499B5CA0B /* Playlist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Playlist.swift; path = sources/SoundcloudSDK/model/Playlist.swift; sourceTree = "<group>"; };
+		59662E0C78A29DF4C568EB1ABCF3AF20 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		59ADD959B45150004817373F4A11207B /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A65099158442BB867A36C3B13731B50 /* OnePasswordExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
+		5AEC2EAA6A0B1F6238BD7D77B74E2B84 /* OnePasswordExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OnePasswordExtension.h; sourceTree = "<group>"; };
+		5DAA91C5F71C0B19FD5BA7225F825C25 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		60E3578FFD547FB9B9DF669ACB65CE15 /* Soundcloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Soundcloud-umbrella.h"; sourceTree = "<group>"; };
+		60E5BC1B6CFE2735B8F1CD5746AEB4F2 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6144670AA872F1D4B87538900CFD2F6D /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		618689C7D36ADC8AC2CAAC6EF8681BD5 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		6256B2BA71DAA9D12EB85D3E8BC9BE56 /* SoundcloudWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundcloudWebViewController.swift; path = sources/SoundcloudSDK/views/SoundcloudWebViewController.swift; sourceTree = "<group>"; };
+		63EB64AC833FBFFE91CFEB8AA7E290AB /* AudioPlayerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerSwift-umbrella.h"; sourceTree = "<group>"; };
+		645C688EC6920EE6EEA0CF64DE9B99B1 /* JSONCodable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONCodable-dummy.m"; sourceTree = "<group>"; };
+		652FA4A35ADD4CF40FCCCD2601355434 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6646BCA8276D232EB1E52849AD140CA0 /* AudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66924B503BE93DE6FFD89BDD8610115D /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		697F9460CD85B2C74B3145C9157A0A03 /* onepassword-extension-light~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light~regular.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light~regular.png"; sourceTree = "<group>"; };
+		69863B829DF17AB309CEA43DB7DA01E7 /* UICKeyChainStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-umbrella.h"; sourceTree = "<group>"; };
+		6B44DEB56725F4003FEA279D4E82F9BE /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
+		6BAC937FF7064724DC42B2AAE429D633 /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = sources/SoundcloudSDK/extension/DictionaryExtension.swift; sourceTree = "<group>"; };
+		6BE592A120118EB8885E89374E9ADB2F /* UserRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserRequest.swift; path = sources/SoundcloudSDK/request/UserRequest.swift; sourceTree = "<group>"; };
+		6BEA2DDBA8D070B6C5C26AE8BE1C6B8D /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		6CF508555F59190735C8DA062B6F7AAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D944CEED3AB7C9AFD194F003E719BF0 /* 1Password.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = 1Password.xcassets; sourceTree = "<group>"; };
+		6ECAAB15EAB40B309659597195984454 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7A13AB878B217071C6ADD0BCADD062FA /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8CACB16B30E985457D867D16D9C556 /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
+		7CF6880C797C22F7B7F1A417C077E328 /* JSONCodable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONCodable.xcconfig; sourceTree = "<group>"; };
+		7D09D591BC203836CBC26055189A76D8 /* AudioPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioPlayer.swift; path = Source/AudioPlayer.swift; sourceTree = "<group>"; };
+		7DC3A820022BA72313FB0B0B1379CA66 /* AudioPlayerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AudioPlayerSwift.modulemap; sourceTree = "<group>"; };
+		8393E3930A9D8DC19E848D988FE99444 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		8461DEF01AA4296D2709EAB80DC85E42 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		8580B7FFF5DA45F353CB218FF6910414 /* APIResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = sources/SoundcloudSDK/model/APIResponse.swift; sourceTree = "<group>"; };
+		868CF293967B6733143C97C24D8CA57F /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		86B0F11019A5F0FCA6330A534D5ECC76 /* onepassword-toolbar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar@3x.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar@3x.png"; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		892A1738D04DB6093D592C82827A9377 /* JSONString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONString.swift; path = JSONCodable/JSONString.swift; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8A3A3E267B654C8E953706C7C6935B86 /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
+		8A614AF396F2CD693B52ED749A42E2F3 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		8CD2A80D5295171E5E405D77A5B2CC27 /* JSONHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHelpers.swift; path = JSONCodable/JSONHelpers.swift; sourceTree = "<group>"; };
+		8D02DC428AC3E6957CB60035B1AA5915 /* onepassword-navbar-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light.png"; sourceTree = "<group>"; };
+		8D17CA49FA66776AFAE452FE2B6EB7B4 /* 1PasswordExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "1PasswordExtension-dummy.m"; sourceTree = "<group>"; };
+		905032C2FF272C96803E6AF7B229D7E0 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		938DA65C4CE57D36EBD938186AB72262 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		95C9F1909809C5F7024A9B805222A01C /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		97890305EDE5BC7471DBD07802D07890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		97EAE5D0D044F8E260A37249CCCC25B8 /* Jukebox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Jukebox-dummy.m"; sourceTree = "<group>"; };
+		984AA311EEF639928EF8EA4F2CFB6F83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9902B82CCDD197237A1E88235E991FF4 /* NSURLExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSURLExtension.swift; path = sources/SoundcloudSDK/extension/NSURLExtension.swift; sourceTree = "<group>"; };
+		9946E3192B6AA0CD6D2C5EA7FFB4AF08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9A29C976B040E37AD9EAA6AAA4F02B60 /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
+		9B97DAC64DC54E7F6A9AB8A6C1BEB7BC /* App.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = App.swift; path = sources/SoundcloudSDK/model/App.swift; sourceTree = "<group>"; };
+		9BFB5B5F8B3000018C150B93D3BFA19D /* Jukebox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jukebox-prefix.pch"; sourceTree = "<group>"; };
+		9DF085A6AE452395161214FE534FCC5E /* PlaylistRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlaylistRequest.swift; path = sources/SoundcloudSDK/request/PlaylistRequest.swift; sourceTree = "<group>"; };
+		9E8C1A99098F3316A975B8FE7A1A2818 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAE82C3E99B5D72E52077E7E35EBDA5 /* onepassword-button-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light.png"; sourceTree = "<group>"; };
+		A0C4B71DCF2DC262B7874C00B686BD2E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		A4C8DFA1BCABB1BFBEF0912D87BED36C /* onepassword-toolbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar.png"; sourceTree = "<group>"; };
+		A5B2A2769E5ECBBEDDE2A88FC1DE2A19 /* onepassword-extension~regular.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension~regular.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension~regular.png"; sourceTree = "<group>"; };
+		A8047C6B228751CEFD1CB693011E2BFF /* JukeboxItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JukeboxItem.swift; path = Pod/Classes/JukeboxItem.swift; sourceTree = "<group>"; };
+		A9574D21DC7CDECD8E35ED254E4C03A7 /* AudioPlayerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AudioPlayerSwift.xcconfig; sourceTree = "<group>"; };
+		AA18A100BA35B9C7F2D42B28347FCD56 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		AAC4702F94A6ADD5310BF52A58B3EC61 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		AEF2B3D024573C00E26A2F3E8E141DB0 /* onepassword-extension-light@2x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension-light@2x~compact.png"; path = "1Password.xcassets/onepassword-extension-light.imageset/onepassword-extension-light@2x~compact.png"; sourceTree = "<group>"; };
+		B1F0D6C96D47EBF7646F52D95511D7CF /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
+		B3338899BEBCEB3AF38F4CA0EFEB01D5 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		B3BC72513B4F083EBD010209D9308576 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		B40AFC05477B495D4B37CEA4BDAE9190 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		B54D01E070BD2F3951AC87C353B6C64D /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B586CDD2B518F833D72C9760B3281219 /* onepassword-navbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar.png"; sourceTree = "<group>"; };
+		B5FCF08A1C255FA828C71A67CA9EF821 /* JSONTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONTransformer.swift; path = JSONCodable/JSONTransformer.swift; sourceTree = "<group>"; };
+		B61C41FEAA089B2F7A9E44FF64B6E71C /* Track.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Track.swift; path = sources/SoundcloudSDK/model/Track.swift; sourceTree = "<group>"; };
+		B7EE05306A1BF0EDED4C3F409FFC763D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B84FE4B7B5EDE7E1E8A74B49CDCEC8FE /* onepassword-extension~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension~compact.png"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA76353969EBB6ABEABDF8BB40395AEA /* onepassword-navbar-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar-light@3x.png"; path = "1Password.xcassets/onepassword-navbar-light.imageset/onepassword-navbar-light@3x.png"; sourceTree = "<group>"; };
+		BAA90B01842C069F1826AFB43E2A4381 /* onepassword-navbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-navbar@2x.png"; path = "1Password.xcassets/onepassword-navbar.imageset/onepassword-navbar@2x.png"; sourceTree = "<group>"; };
+		C14B1F74FFA96E2F08DBE51BEAE7FB55 /* 1PasswordExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = 1PasswordExtension.modulemap; sourceTree = "<group>"; };
+		C1947ACB8348554FEC9ACFF60C1BDCBB /* 1PasswordExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-umbrella.h"; sourceTree = "<group>"; };
+		C3FEDE05100CEC5499F465C2D35B856D /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = sources/SoundcloudSDK/model/User.swift; sourceTree = "<group>"; };
+		C6DF8AA7B91DCD68A14690B6BF49EF99 /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		C72B748E49435778463AA246268A8121 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB551AC4A736D20B6EFB919091FD1028 /* ImageURLs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageURLs.swift; path = sources/SoundcloudSDK/model/ImageURLs.swift; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CD0976D57311E844543935C3668A4410 /* onepassword-toolbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar@2x.png"; path = "1Password.xcassets/onepassword-toolbar.imageset/onepassword-toolbar@2x.png"; sourceTree = "<group>"; };
+		CF4A7870858DFC53524227E983265CF0 /* onepassword-button-light@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light@3x.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light@3x.png"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0F4C818F49B2D6E4F8CEA4AE0373328 /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
+		D121A38D7267C6EC89F52A92081FA6CD /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		D29DAC20CF36E5FA073B0C28333487F7 /* onepassword-extension@3x~compact.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-extension@3x~compact.png"; path = "1Password.xcassets/onepassword-extension.imageset/onepassword-extension@3x~compact.png"; sourceTree = "<group>"; };
+		D895D3827D2577644A5C8B8A8D028181 /* JSONEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodable.swift; path = JSONCodable/JSONEncodable.swift; sourceTree = "<group>"; };
+		D8EE1F219C02D0C449E5B8FA55C2582D /* onepassword-toolbar-light.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light.png"; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DA5469CB3741C615EECAA7D90EC40F42 /* Jukebox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Jukebox.swift; path = Pod/Classes/Jukebox.swift; sourceTree = "<group>"; };
+		DB37EDC857D8B35DAAB92FD302030680 /* TrackRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackRequest.swift; path = sources/SoundcloudSDK/request/TrackRequest.swift; sourceTree = "<group>"; };
+		DB8EEB627EC30DC93747B470A5937120 /* onepassword-toolbar-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-toolbar-light@2x.png"; path = "1Password.xcassets/onepassword-toolbar-light.imageset/onepassword-toolbar-light@2x.png"; sourceTree = "<group>"; };
+		DC69E08486C8111D862999DE0EBEEAFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DEDBF885040FF8C4000D06E3CBAAA908 /* Soundcloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Soundcloud-prefix.pch"; sourceTree = "<group>"; };
+		E0BEBA21C51F8AFD7E083185A60520FD /* SearchQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchQuery.swift; path = sources/SoundcloudSDK/model/SearchQuery.swift; sourceTree = "<group>"; };
+		E2BAE2C499D04D96934EA08A532E9192 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		E325E95B6D8680F45FCA03499BB1D046 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = sources/SoundcloudSDK/model/Enums.swift; sourceTree = "<group>"; };
+		E3C6998ACCF16950AC8E684F67720B50 /* 1PasswordExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "1PasswordExtension-prefix.pch"; sourceTree = "<group>"; };
+		E7713CE1096C4C89E9C1F268F63D15AC /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA1828B0968DABBC2B4893AAE282164 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		F0AE6F692ABED8B9ECA94B8FE7ABD968 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnePasswordExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AC2B56B8CEA51EFD8CACBB97A7C3A9 /* Soundcloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Soundcloud.xcconfig; sourceTree = "<group>"; };
+		F3C7B4B5EFBDE2813F33116588589057 /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
+		F3DCAA87842E3AF28CE25156C91A35C0 /* onepassword-button-light@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "onepassword-button-light@2x.png"; path = "1Password.xcassets/onepassword-button-light.imageset/onepassword-button-light@2x.png"; sourceTree = "<group>"; };
+		F4DAE4CABA266827A236EB4E6E0CADF3 /* JSONCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F551876BBE7B45BCF7964CB474E1288A /* Soundcloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Soundcloud-dummy.m"; sourceTree = "<group>"; };
+		F8B0B79ED555675992CB894B24F22D96 /* JSONCodable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONCodable-umbrella.h"; sourceTree = "<group>"; };
+		F8C6341F2E4D46CE194314FEC45B4DA5 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		FAE2600D7FDED79727D0E5F7836E7E6A /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		FCE9EF02EEA93502D5D4C5ADE6FBA12B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6C8B2AC07C1E9CA6E8C9B1670BA826 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = sources/SoundcloudSDK/model/Comment.swift; sourceTree = "<group>"; };
+		FF109A9C675947B5460C97DBD476A986 /* JSONCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONCodable.swift; path = JSONCodable/JSONCodable.swift; sourceTree = "<group>"; };
+		FFDB4074FCE150DD4D9C0F385C557280 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFAA41BA37528C13D24987FF056CF4C /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F61D7C8769CEC9BF6BFD9F0451083B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CAFA798732E9A28892E8D39C03453F /* AVFoundation.framework in Frameworks */,
+				E35EA1D8888E4E09B38F11626329D650 /* Foundation.framework in Frameworks */,
+				A39F57186D048200C5F590829521C1DE /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11EF961F251687F2D28E7E7F6A52456C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30C67793E92142AD2DC4C296BACC2792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496A88EAD147230905BA8D4D5E44474F /* Foundation.framework in Frameworks */,
+				5D82D33832BD4FAC1E65868EDFD43318 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB7E1900E6A44DC22B593EAAEE610C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A44114017E12A2CF6A141C5185E25D /* Foundation.framework in Frameworks */,
+				F3CC3404AEF00A07879F63BB016981E9 /* OnePasswordExtension.framework in Frameworks */,
+				4108050C9C89725C289960BBE136105D /* UICKeyChainStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D4B5A94B21D0E28514C9A4E8A73A526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C2F3B16383B02E0BA346D0481DB3F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34A58BDD4AF1374DB7AECBCCFF6C883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D45383808650597C2E20B0C2225523 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A764988A3367895BAB4C0453E8C292F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB0E9735B1A31C2579D25F50398D2DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB17F1A03CC9CEE99918B6FABD9AACF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B33994CB1D9739BA8DCB9CAC9C5618D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D259BFCE4D8DABE6DBADCE8DCB0906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E45CFA9B2E9B95CFED4BAE62A3B20AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAE3B004E8867CB16ECA3BA219D54B2 /* Foundation.framework in Frameworks */,
+				5EA4528128AC6CE7FFB87BC8CED7A67A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC1A73E30C8322A70D5DCD63B04CAE84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD81585A78B44D377171FCEDEFAA830 /* CoreGraphics.framework in Frameworks */,
+				46BD1A9D810F01F53BFFC3490E258951 /* Foundation.framework in Frameworks */,
+				14166AE8334CDCEB4F4D8B069FBB554A /* QuartzCore.framework in Frameworks */,
+				E197C5199E24876F592836465AF6B2F1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AEEC4FCD49CCF441FBE133015EF7F5E /* YouTubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAA41BA37528C13D24987FF056CF4C /* YouTubePlayer.swift */,
+				5DAA91C5F71C0B19FD5BA7225F825C25 /* YTPlayer.html */,
+				F9B152C83690EB8B62628BB9A86E4699 /* Resources */,
+				13A5BD98E944385FBBF24CB65C296906 /* Support Files */,
+			);
+			path = YouTubePlayer;
+			sourceTree = "<group>";
+		};
+		0F74495FE463B7B0FB0C4FFC623B0383 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5F243165478C5B1D81CB2AF7FF053EEA /* Default */,
+				CE77BF67D80C92A5A1F49CEA46E9FFCE /* Support Files */,
+				86A793A2365A8AF2AB49D9E92B10593C /* Swift */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		13A5BD98E944385FBBF24CB65C296906 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9EF02EEA93502D5D4C5ADE6FBA12B /* Info.plist */,
+				27CB5B8E756E6DE5732AFC20F0426AA9 /* YouTubePlayer.modulemap */,
+				D0F4C818F49B2D6E4F8CEA4AE0373328 /* YouTubePlayer.xcconfig */,
+				6B44DEB56725F4003FEA279D4E82F9BE /* YouTubePlayer-dummy.m */,
+				7A8CACB16B30E985457D867D16D9C556 /* YouTubePlayer-prefix.pch */,
+				F8C6341F2E4D46CE194314FEC45B4DA5 /* YouTubePlayer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YouTubePlayer";
+			sourceTree = "<group>";
+		};
+		172F852159FE231528532F562813F66B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DC3A820022BA72313FB0B0B1379CA66 /* AudioPlayerSwift.modulemap */,
+				A9574D21DC7CDECD8E35ED254E4C03A7 /* AudioPlayerSwift.xcconfig */,
+				4CC37A233B3929E548A24F7D33A92238 /* AudioPlayerSwift-dummy.m */,
+				3ABA099C3806C607BE6D26CD44BA0FAB /* AudioPlayerSwift-prefix.pch */,
+				63EB64AC833FBFFE91CFEB8AA7E290AB /* AudioPlayerSwift-umbrella.h */,
+				B7EE05306A1BF0EDED4C3F409FFC763D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AudioPlayerSwift";
+			sourceTree = "<group>";
+		};
+		1C0540F6B679D88346D0AEAF50198903 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC6C6F213768B97EBC1BF7BB1E0F56 /* AVFoundation.framework */,
+				97890305EDE5BC7471DBD07802D07890 /* CoreGraphics.framework */,
+				94032F652EB390DB65EEE5D412B462B4 /* Foundation.framework */,
+				A0C4B71DCF2DC262B7874C00B686BD2E /* MediaPlayer.framework */,
+				9946E3192B6AA0CD6D2C5EA7FFB4AF08 /* QuartzCore.framework */,
+				652FA4A35ADD4CF40FCCCD2601355434 /* Security.framework */,
+				DC69E08486C8111D862999DE0EBEEAFF /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		23E92752DC414EF9106883A52B88E452 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F9E37DA703B9C5D2EC03DEB16C54AD9 /* 1PasswordExtension */,
+				C56184BB1B2F73701E2F12B1BA93CA6F /* AudioPlayerSwift */,
+				0F74495FE463B7B0FB0C4FFC623B0383 /* ChameleonFramework */,
+				55C612901525892A4F6EAAA8B9C8FCBA /* JSONCodable */,
+				339F6EB98E06760210B5234339D23FA3 /* Jukebox */,
+				9FA8C2E2E784B1A19C171E935C873F21 /* Soundcloud */,
+				A31E8B1910BF3C0D71506934E7F91B4C /* UICKeyChainStore */,
+				0AEEC4FCD49CCF441FBE133015EF7F5E /* YouTubePlayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		339F6EB98E06760210B5234339D23FA3 /* Jukebox */ = {
+			isa = PBXGroup;
+			children = (
+				DA5469CB3741C615EECAA7D90EC40F42 /* Jukebox.swift */,
+				A8047C6B228751CEFD1CB693011E2BFF /* JukeboxItem.swift */,
+				CCD4D7560B8B269D78FC581C83C110BE /* Support Files */,
+			);
+			path = Jukebox;
+			sourceTree = "<group>";
+		};
+		3458DCAB9B006BFCD86FA6485BFE313B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				984AA311EEF639928EF8EA4F2CFB6F83 /* Info.plist */,
+				42F0EC42FD7F011FE848CA4934CD93A8 /* JSONCodable.modulemap */,
+				7CF6880C797C22F7B7F1A417C077E328 /* JSONCodable.xcconfig */,
+				645C688EC6920EE6EEA0CF64DE9B99B1 /* JSONCodable-dummy.m */,
+				1A0F2952BC481AED806A7084A66F4040 /* JSONCodable-prefix.pch */,
+				F8B0B79ED555675992CB894B24F22D96 /* JSONCodable-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSONCodable";
+			sourceTree = "<group>";
+		};
+		4CCFAFDC5C09321C149C8D08860ADD62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13DF4F8ED58F8F58AC0EA6D1D535F775 /* OnePasswordExtension.framework */,
+				B54D01E070BD2F3951AC87C353B6C64D /* UICKeyChainStore.framework */,
+				1C0540F6B679D88346D0AEAF50198903 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55C612901525892A4F6EAAA8B9C8FCBA /* JSONCodable */ = {
+			isa = PBXGroup;
+			children = (
+				FF109A9C675947B5460C97DBD476A986 /* JSONCodable.swift */,
+				019AA592730BE445DE833026BF926227 /* JSONDecodable.swift */,
+				D895D3827D2577644A5C8B8A8D028181 /* JSONEncodable.swift */,
+				8CD2A80D5295171E5E405D77A5B2CC27 /* JSONHelpers.swift */,
+				892A1738D04DB6093D592C82827A9377 /* JSONString.swift */,
+				B5FCF08A1C255FA828C71A67CA9EF821 /* JSONTransformer.swift */,
+				3458DCAB9B006BFCD86FA6485BFE313B /* Support Files */,
+			);
+			path = JSONCodable;
+			sourceTree = "<group>";
+		};
+		5F243165478C5B1D81CB2AF7FF053EEA /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				59662E0C78A29DF4C568EB1ABCF3AF20 /* Chameleon.h */,
+				AA18A100BA35B9C7F2D42B28347FCD56 /* Chameleon_.h */,
+				66924B503BE93DE6FFD89BDD8610115D /* Chameleon_.m */,
+				1715F2AD67AE90F627ADD9FA78F0DCCC /* ChameleonConstants.h */,
+				288AB0C38119C2A820DD36C318C03830 /* ChameleonConstants.m */,
+				B3BC72513B4F083EBD010209D9308576 /* ChameleonEnums.h */,
+				27AEEC452FEEB6839CBB785F12BCADF9 /* ChameleonMacros.h */,
+				905032C2FF272C96803E6AF7B229D7E0 /* NSArray+Chameleon.h */,
+				03EDA66D321C6E799007D6043B5708FF /* NSArray+Chameleon.m */,
+				8393E3930A9D8DC19E848D988FE99444 /* UIAppearance+Swift.h */,
+				E2BAE2C499D04D96934EA08A532E9192 /* UIAppearance+Swift.m */,
+				B3338899BEBCEB3AF38F4CA0EFEB01D5 /* UIButton+Chameleon.h */,
+				3F3B820D065A2206524E530BCD0CD8D1 /* UIButton+Chameleon.m */,
+				19FDAC95DCCFA31B9FB8C258CF345CDE /* UIColor+Chameleon.h */,
+				EAA1828B0968DABBC2B4893AAE282164 /* UIColor+Chameleon.m */,
+				95C9F1909809C5F7024A9B805222A01C /* UIColor+ChameleonPrivate.h */,
+				8461DEF01AA4296D2709EAB80DC85E42 /* UIColor+ChameleonPrivate.m */,
+				938DA65C4CE57D36EBD938186AB72262 /* UIImage+ChameleonPrivate.h */,
+				618689C7D36ADC8AC2CAAC6EF8681BD5 /* UIImage+ChameleonPrivate.m */,
+				B40AFC05477B495D4B37CEA4BDAE9190 /* UILabel+Chameleon.h */,
+				FAE2600D7FDED79727D0E5F7836E7E6A /* UILabel+Chameleon.m */,
+				6144670AA872F1D4B87538900CFD2F6D /* UINavigationController+Chameleon.h */,
+				38BA31EB279827549BBEC8B680C6B7BD /* UINavigationController+Chameleon.m */,
+				E7713CE1096C4C89E9C1F268F63D15AC /* UIView+ChameleonPrivate.h */,
+				36C6572F95B8949C472BAA68DB57A5D3 /* UIView+ChameleonPrivate.m */,
+				868CF293967B6733143C97C24D8CA57F /* UIViewController+Chameleon.h */,
+				D121A38D7267C6EC89F52A92081FA6CD /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		6888AB0E1BA17E147E48C11BB9EE7873 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1F74FFA96E2F08DBE51BEAE7FB55 /* 1PasswordExtension.modulemap */,
+				14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */,
+				8D17CA49FA66776AFAE452FE2B6EB7B4 /* 1PasswordExtension-dummy.m */,
+				E3C6998ACCF16950AC8E684F67720B50 /* 1PasswordExtension-prefix.pch */,
+				C1947ACB8348554FEC9ACFF60C1BDCBB /* 1PasswordExtension-umbrella.h */,
+				FFDB4074FCE150DD4D9C0F385C557280 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/1PasswordExtension";
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				4CCFAFDC5C09321C149C8D08860ADD62 /* Frameworks */,
+				23E92752DC414EF9106883A52B88E452 /* Pods */,
+				CCBDE4BEC2BBB4287F4E82274103B2E9 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86A793A2365A8AF2AB49D9E92B10593C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8A614AF396F2CD693B52ED749A42E2F3 /* ChameleonShorthand.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		8F9E37DA703B9C5D2EC03DEB16C54AD9 /* 1PasswordExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC2EAA6A0B1F6238BD7D77B74E2B84 /* OnePasswordExtension.h */,
+				5A65099158442BB867A36C3B13731B50 /* OnePasswordExtension.m */,
+				C75872B412A65BA9CAF043F546482946 /* Resources */,
+				6888AB0E1BA17E147E48C11BB9EE7873 /* Support Files */,
+			);
+			path = 1PasswordExtension;
+			sourceTree = "<group>";
+		};
+		9FA8C2E2E784B1A19C171E935C873F21 /* Soundcloud */ = {
+			isa = PBXGroup;
+			children = (
+				8580B7FFF5DA45F353CB218FF6910414 /* APIResponse.swift */,
+				9B97DAC64DC54E7F6A9AB8A6C1BEB7BC /* App.swift */,
+				FD6C8B2AC07C1E9CA6E8C9B1670BA826 /* Comment.swift */,
+				6BAC937FF7064724DC42B2AAE429D633 /* DictionaryExtension.swift */,
+				E325E95B6D8680F45FCA03499BB1D046 /* Enums.swift */,
+				CB551AC4A736D20B6EFB919091FD1028 /* ImageURLs.swift */,
+				9902B82CCDD197237A1E88235E991FF4 /* NSURLExtension.swift */,
+				548A68C039C058B463C5149499B5CA0B /* Playlist.swift */,
+				9DF085A6AE452395161214FE534FCC5E /* PlaylistRequest.swift */,
+				3F01E7D6E43C826279A6EA303D18D6A3 /* Request.swift */,
+				E0BEBA21C51F8AFD7E083185A60520FD /* SearchQuery.swift */,
+				4A5F5B5988826594D407990DC2E93C67 /* Soundcloud.swift */,
+				6256B2BA71DAA9D12EB85D3E8BC9BE56 /* SoundcloudWebViewController.swift */,
+				2E412BE3A42D266595FCD11A963294A9 /* StringExtension.swift */,
+				B61C41FEAA089B2F7A9E44FF64B6E71C /* Track.swift */,
+				DB37EDC857D8B35DAAB92FD302030680 /* TrackRequest.swift */,
+				C3FEDE05100CEC5499F465C2D35B856D /* User.swift */,
+				6BE592A120118EB8885E89374E9ADB2F /* UserRequest.swift */,
+				DA23AF5AED396C2D368B7CB52281B33D /* Support Files */,
+			);
+			path = Soundcloud;
+			sourceTree = "<group>";
+		};
+		A31E8B1910BF3C0D71506934E7F91B4C /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7B4B5EFBDE2813F33116588589057 /* UICKeyChainStore.h */,
+				8A3A3E267B654C8E953706C7C6935B86 /* UICKeyChainStore.m */,
+				D5AFCB9CFB6DFCE0E2FCEC05E47118CC /* Support Files */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C56184BB1B2F73701E2F12B1BA93CA6F /* AudioPlayerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7D09D591BC203836CBC26055189A76D8 /* AudioPlayer.swift */,
+				172F852159FE231528532F562813F66B /* Support Files */,
+			);
+			path = AudioPlayerSwift;
+			sourceTree = "<group>";
+		};
+		C75872B412A65BA9CAF043F546482946 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D944CEED3AB7C9AFD194F003E719BF0 /* 1Password.xcassets */,
+				417C8D837E0D0567FA9653C0708BB746 /* onepassword-button.png */,
+				9EAE82C3E99B5D72E52077E7E35EBDA5 /* onepassword-button-light.png */,
+				F3DCAA87842E3AF28CE25156C91A35C0 /* onepassword-button-light@2x.png */,
+				CF4A7870858DFC53524227E983265CF0 /* onepassword-button-light@3x.png */,
+				3189C5FC43826ADEB9ADD315C91C6EDA /* onepassword-button@2x.png */,
+				47634E4040046F844150E8D38031F9CD /* onepassword-button@3x.png */,
+				AEF2B3D024573C00E26A2F3E8E141DB0 /* onepassword-extension-light@2x~compact.png */,
+				0D0925BCD46F4D5A9425709031398BDB /* onepassword-extension-light@2x~regular.png */,
+				0DA8B3EE5C2B17510E940F43DAEE3F7F /* onepassword-extension-light@3x~compact.png */,
+				3A97727109CEBA6E8A38E5A93987AF06 /* onepassword-extension-light~compact.png */,
+				697F9460CD85B2C74B3145C9157A0A03 /* onepassword-extension-light~regular.png */,
+				30FBB5296D3DA90A43A237BBBD159102 /* onepassword-extension@2x~compact.png */,
+				214F7E72C073D98927A991106A74D9AC /* onepassword-extension@2x~regular.png */,
+				D29DAC20CF36E5FA073B0C28333487F7 /* onepassword-extension@3x~compact.png */,
+				B84FE4B7B5EDE7E1E8A74B49CDCEC8FE /* onepassword-extension~compact.png */,
+				A5B2A2769E5ECBBEDDE2A88FC1DE2A19 /* onepassword-extension~regular.png */,
+				B586CDD2B518F833D72C9760B3281219 /* onepassword-navbar.png */,
+				8D02DC428AC3E6957CB60035B1AA5915 /* onepassword-navbar-light.png */,
+				19B2F8F5C8C8ED14CEC5A455E4DA2C1F /* onepassword-navbar-light@2x.png */,
+				BA76353969EBB6ABEABDF8BB40395AEA /* onepassword-navbar-light@3x.png */,
+				BAA90B01842C069F1826AFB43E2A4381 /* onepassword-navbar@2x.png */,
+				3B8A56EFD3D71049850800EEE39F6F69 /* onepassword-navbar@3x.png */,
+				A4C8DFA1BCABB1BFBEF0912D87BED36C /* onepassword-toolbar.png */,
+				D8EE1F219C02D0C449E5B8FA55C2582D /* onepassword-toolbar-light.png */,
+				DB8EEB627EC30DC93747B470A5937120 /* onepassword-toolbar-light@2x.png */,
+				0E5CBEADA725032AF98071014A666B78 /* onepassword-toolbar-light@3x.png */,
+				CD0976D57311E844543935C3668A4410 /* onepassword-toolbar@2x.png */,
+				86B0F11019A5F0FCA6330A534D5ECC76 /* onepassword-toolbar@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CCBDE4BEC2BBB4287F4E82274103B2E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6646BCA8276D232EB1E52849AD140CA0 /* AudioPlayer.framework */,
+				59ADD959B45150004817373F4A11207B /* ChameleonFramework.framework */,
+				F4DAE4CABA266827A236EB4E6E0CADF3 /* JSONCodable.framework */,
+				3358DC0886862DFF42FFA04184452CB6 /* Jukebox.bundle */,
+				6ECAAB15EAB40B309659597195984454 /* Jukebox.framework */,
+				F0AE6F692ABED8B9ECA94B8FE7ABD968 /* OnePasswordExtension.framework */,
+				30F8BC5582909A0EFE40FC66329F2CF8 /* OnePasswordExtensionResources.bundle */,
+				33F46D8356A5290664E16A89BBC3CA99 /* Pods.framework */,
+				1906C420DBE5A0C511186E71507FB959 /* Soundcloud.framework */,
+				60E5BC1B6CFE2735B8F1CD5746AEB4F2 /* UICKeyChainStore.framework */,
+				7A13AB878B217071C6ADD0BCADD062FA /* YouTubePlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD4D7560B8B269D78FC581C83C110BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CF508555F59190735C8DA062B6F7AAA /* Info.plist */,
+				410DBD14E1EB9E0AA0AB692257113ED0 /* Jukebox.modulemap */,
+				1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */,
+				97EAE5D0D044F8E260A37249CCCC25B8 /* Jukebox-dummy.m */,
+				9BFB5B5F8B3000018C150B93D3BFA19D /* Jukebox-prefix.pch */,
+				35151723F90626F9BD6E5909F9C527DD /* Jukebox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Jukebox";
+			sourceTree = "<group>";
+		};
+		CE77BF67D80C92A5A1F49CEA46E9FFCE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4702F94A6ADD5310BF52A58B3EC61 /* ChameleonFramework.modulemap */,
+				301E6A84A054BCD35F448F6E1A8BF4AF /* ChameleonFramework.xcconfig */,
+				3F72C32B9DC7B29B8EE318A78436E491 /* ChameleonFramework-dummy.m */,
+				3C39D4D3C758A13B10F104E411666379 /* ChameleonFramework-prefix.pch */,
+				6BEA2DDBA8D070B6C5C26AE8BE1C6B8D /* ChameleonFramework-umbrella.h */,
+				485C70CA7067CE33793D4A7A7D9EA44E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
+			sourceTree = "<group>";
+		};
+		D5AFCB9CFB6DFCE0E2FCEC05E47118CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C72B748E49435778463AA246268A8121 /* Info.plist */,
+				40E7110874FAB07EF85BF4ED21407803 /* UICKeyChainStore.modulemap */,
+				9A29C976B040E37AD9EAA6AAA4F02B60 /* UICKeyChainStore.xcconfig */,
+				B1F0D6C96D47EBF7646F52D95511D7CF /* UICKeyChainStore-dummy.m */,
+				C6DF8AA7B91DCD68A14690B6BF49EF99 /* UICKeyChainStore-prefix.pch */,
+				69863B829DF17AB309CEA43DB7DA01E7 /* UICKeyChainStore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
+			sourceTree = "<group>";
+		};
+		DA23AF5AED396C2D368B7CB52281B33D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E8C1A99098F3316A975B8FE7A1A2818 /* Info.plist */,
+				23913E32E3B83F66BCAF6D5CE5A5DBDD /* Soundcloud.modulemap */,
+				F3AC2B56B8CEA51EFD8CACBB97A7C3A9 /* Soundcloud.xcconfig */,
+				F551876BBE7B45BCF7964CB474E1288A /* Soundcloud-dummy.m */,
+				DEDBF885040FF8C4000D06E3CBAAA908 /* Soundcloud-prefix.pch */,
+				60E3578FFD547FB9B9DF669ACB65CE15 /* Soundcloud-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Soundcloud";
+			sourceTree = "<group>";
+		};
+		F9B152C83690EB8B62628BB9A86E4699 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0518B46526EA0C76A98AB3F8E1A05173 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0139E1D306FC955B772DDC229160C083 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100C41AB97F1E7D191A797932EF8AF16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B2D1720CCF6A5A35163A64C96154CA /* 1PasswordExtension-umbrella.h in Headers */,
+				EAE970E887C03DE9D99C0E18036B6FA9 /* OnePasswordExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B65D362D066A8B1DD5B17ACAAD19C72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14990E1E8CBD1C88B83F4197E5EDCAB /* AudioPlayerSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59890BED3AF6CEBA2D3BC9A5C45EFBA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC9330EBDF327051B12E42AE8741B6E /* Chameleon.h in Headers */,
+				738E4E0555CE3C233C400AE87B9887E4 /* Chameleon_.h in Headers */,
+				097AE4014349090D14C6C5637F8A3464 /* ChameleonConstants.h in Headers */,
+				4A0E71E9E2BD86AA8CB6077A95CDC034 /* ChameleonEnums.h in Headers */,
+				64C89D98B9D3B9C57971E1E137233980 /* ChameleonFramework-umbrella.h in Headers */,
+				5CCC419BB423F48192FBA3C7D7D6B7DA /* ChameleonMacros.h in Headers */,
+				FF4A8EFE1154C1FFD58B48E978298871 /* NSArray+Chameleon.h in Headers */,
+				B71968ADC80D9CA74C57959B609E46F6 /* UIAppearance+Swift.h in Headers */,
+				C8F191C4FA3530AAEBAD2DDE2604DCF2 /* UIButton+Chameleon.h in Headers */,
+				CFB8C96C7D3F7331E409D296466B923A /* UIColor+Chameleon.h in Headers */,
+				4194C2418EEF62E01342A820B5EF9C71 /* UIColor+ChameleonPrivate.h in Headers */,
+				7708E07C85FF6C2BC400C15CCDB7EB1C /* UIImage+ChameleonPrivate.h in Headers */,
+				00967A34C0778275E41D1CBA32E398F8 /* UILabel+Chameleon.h in Headers */,
+				6FFDAD2F800BC27FCF40E92B71D88CF3 /* UINavigationController+Chameleon.h in Headers */,
+				D36BC9B0C925A5244E16EE70E4809EE6 /* UIView+ChameleonPrivate.h in Headers */,
+				AF9FDFE994A206795619E469B68C614E /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A68F7D49CE714826FF0C5D223479B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2487D9DAFF7FE4E943953D6E3580D422 /* Jukebox-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		695233DCF9782224D3300B35F1F3B7C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5048522FBB8A6B67E8388A95BD4FFAB5 /* UICKeyChainStore-umbrella.h in Headers */,
+				F0C2C3033CF6258C842D2E7A261B2546 /* UICKeyChainStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABB9B91A7C3B4C187539792DF6CE34C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED73A0C596B33D81D72C8F3A95B9ED6 /* JSONCodable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F26C488EEA03E35E64B73E0A10A776 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAA6FD4735D64785B2B5571E4EDABE5 /* YouTubePlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CD9386A4ECC080AA366598850C9F5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FA5443B32F7483713DF8E0336B9CDC /* Soundcloud-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		244E052299C7C15FB82F0A69AE1A16D2 /* JSONCodable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F81D60E311CCC36D89732B02F6D823 /* Build configuration list for PBXNativeTarget "JSONCodable" */;
+			buildPhases = (
+				4FABD09484AB4DA91E0DFA2353C97589 /* Sources */,
+				B33994CB1D9739BA8DCB9CAC9C5618D1 /* Frameworks */,
+				ABB9B91A7C3B4C187539792DF6CE34C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONCodable;
+			productName = JSONCodable;
+			productReference = F4DAE4CABA266827A236EB4E6E0CADF3 /* JSONCodable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36325DFCBCB7959CC6D962AA1890B2E6 /* AudioPlayerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC05A15F8D1913D7D057A2D6FC1227D /* Build configuration list for PBXNativeTarget "AudioPlayerSwift" */;
+			buildPhases = (
+				114F6B35F840A275DDD6A7990434DCFB /* Sources */,
+				A764988A3367895BAB4C0453E8C292F3 /* Frameworks */,
+				2B65D362D066A8B1DD5B17ACAAD19C72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioPlayerSwift;
+			productName = AudioPlayerSwift;
+			productReference = 6646BCA8276D232EB1E52849AD140CA0 /* AudioPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E21BC30675BE10E5FB0192B03002EA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
+			buildPhases = (
+				A007306A9F7EAF30B21BFDB4E741628B /* Sources */,
+				FC1A73E30C8322A70D5DCD63B04CAE84 /* Frameworks */,
+				59890BED3AF6CEBA2D3BC9A5C45EFBA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonFramework;
+			productName = ChameleonFramework;
+			productReference = 59ADD959B45150004817373F4A11207B /* ChameleonFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		914F2D3BE90F614A79B5AB1465E3CB54 /* Jukebox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8476731A3D26E6DF18F81404220ADA1 /* Build configuration list for PBXNativeTarget "Jukebox" */;
+			buildPhases = (
+				0C194F20724FBF6BC19C04BEBA9CA078 /* Sources */,
+				0F61D7C8769CEC9BF6BFD9F0451083B6 /* Frameworks */,
+				A1E453EBA2C0EDB44B2E0607ED228871 /* Resources */,
+				63A68F7D49CE714826FF0C5D223479B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C7FF8416979837C6523FAE277214FE5 /* PBXTargetDependency */,
+			);
+			name = Jukebox;
+			productName = Jukebox;
+			productReference = 6ECAAB15EAB40B309659597195984454 /* Jukebox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E5E429FD8DF65BBD725D20A21B106AB /* YouTubePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07648C72A8B15E2D601B62DD9FE7252C /* Build configuration list for PBXNativeTarget "YouTubePlayer" */;
+			buildPhases = (
+				AA8742317BE0D8654131D04BF5ED0C0D /* Sources */,
+				6D4B5A94B21D0E28514C9A4E8A73A526 /* Frameworks */,
+				D3DBB0741C1CB218CB5F3850E5FE6772 /* Resources */,
+				B1F26C488EEA03E35E64B73E0A10A776 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTubePlayer;
+			productName = YouTubePlayer;
+			productReference = 7A13AB878B217071C6ADD0BCADD062FA /* YouTubePlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C96906F89C9D018E2B88DE964A540AB0 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE13CB1CA040586CE04228E9A87DC12F /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0A0E351AF8B6F4544E61999C83BC228E /* Sources */,
+				A34A58BDD4AF1374DB7AECBCCFF6C883 /* Frameworks */,
+				0518B46526EA0C76A98AB3F8E1A05173 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA349EDE73C285B32D35BDAFAA4D4334 /* PBXTargetDependency */,
+				54B839BAE57E38D81F408305D3572483 /* PBXTargetDependency */,
+				4071102383F164CD596404D15C5C06FA /* PBXTargetDependency */,
+				D2E6DBFD82251331060511F003BC4EFE /* PBXTargetDependency */,
+				1C7C1A6D1C98D8B189E450BF6F5527CC /* PBXTargetDependency */,
+				249E2FDF9A93CE5998CB79F1AFDEB486 /* PBXTargetDependency */,
+				F44EAB8DAF28F80E1DD02BC277C3F7E5 /* PBXTargetDependency */,
+				4BB85681C926A9A99ACD4A5493A76F05 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 33F46D8356A5290664E16A89BBC3CA99 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC188E8B568E890080A137C1528744EF /* Soundcloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3186DCBFF066A8456C1F71E1F440B48A /* Build configuration list for PBXNativeTarget "Soundcloud" */;
+			buildPhases = (
+				51C8104A621DFBB9C38356CDDF3CCB71 /* Sources */,
+				4FB7E1900E6A44DC22B593EAAEE610C2 /* Frameworks */,
+				D0CD9386A4ECC080AA366598850C9F5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81600A6E8DD007755A2CF3097DCDDFD7 /* PBXTargetDependency */,
+				32BAE6BB7D902F09268E106B46606D2D /* PBXTargetDependency */,
+			);
+			name = Soundcloud;
+			productName = Soundcloud;
+			productReference = 1906C420DBE5A0C511186E71507FB959 /* Soundcloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8B57B89BC28E74DBA035283E73E0107 /* 1PasswordExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C2CF8869B37A0420A4C5DEA1E16BD3A /* Build configuration list for PBXNativeTarget "1PasswordExtension" */;
+			buildPhases = (
+				33A69C3294284057522F5B845326BD31 /* Sources */,
+				E45CFA9B2E9B95CFED4BAE62A3B20AFF /* Frameworks */,
+				13D34B3F365181A42983CECAAC4F2ACD /* Resources */,
+				100C41AB97F1E7D191A797932EF8AF16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC970CC919652E561DEE8924F4F30163 /* PBXTargetDependency */,
+			);
+			name = 1PasswordExtension;
+			productName = 1PasswordExtension;
+			productReference = F0AE6F692ABED8B9ECA94B8FE7ABD968 /* OnePasswordExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8755411FBEB5C88938F94EFEB42DF28 /* Jukebox-Jukebox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D3B30E156DD8ADC46E79F04A4833A4 /* Build configuration list for PBXNativeTarget "Jukebox-Jukebox" */;
+			buildPhases = (
+				FD6CD95DCDB5A860456A7E6BCDAB9246 /* Sources */,
+				AB17F1A03CC9CEE99918B6FABD9AACF7 /* Frameworks */,
+				FF555A9CE398569296B7FBA01165191C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jukebox-Jukebox";
+			productName = "Jukebox-Jukebox";
+			productReference = 3358DC0886862DFF42FFA04184452CB6 /* Jukebox.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F301E054CA059DDA46EC8E2E6CEC8252 /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0BDCEFE9824681DE67F83A78964EE0 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				583B0CD27B1067A297D5BE5E451319CE /* Sources */,
+				30C67793E92142AD2DC4C296BACC2792 /* Frameworks */,
+				695233DCF9782224D3300B35F1F3B7C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = 60E5BC1B6CFE2735B8F1CD5746AEB4F2 /* UICKeyChainStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF62A25D3E480238C0D473193AB70325 /* 1PasswordExtension-OnePasswordExtensionResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF81894FFC9BC6789F1C68FCCDB017F7 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */;
+			buildPhases = (
+				9C35B1D96E09727BDE97537677DE9CA8 /* Sources */,
+				11EF961F251687F2D28E7E7F6A52456C /* Frameworks */,
+				5E2B03ED562DA2F4CEE9CF1413BD3A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			productName = "1PasswordExtension-OnePasswordExtensionResources";
+			productReference = 30F8BC5582909A0EFE40FC66329F2CF8 /* OnePasswordExtensionResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCBDE4BEC2BBB4287F4E82274103B2E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8B57B89BC28E74DBA035283E73E0107 /* 1PasswordExtension */,
+				FF62A25D3E480238C0D473193AB70325 /* 1PasswordExtension-OnePasswordExtensionResources */,
+				36325DFCBCB7959CC6D962AA1890B2E6 /* AudioPlayerSwift */,
+				5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */,
+				244E052299C7C15FB82F0A69AE1A16D2 /* JSONCodable */,
+				914F2D3BE90F614A79B5AB1465E3CB54 /* Jukebox */,
+				E8755411FBEB5C88938F94EFEB42DF28 /* Jukebox-Jukebox */,
+				C96906F89C9D018E2B88DE964A540AB0 /* Pods */,
+				CC188E8B568E890080A137C1528744EF /* Soundcloud */,
+				F301E054CA059DDA46EC8E2E6CEC8252 /* UICKeyChainStore */,
+				9E5E429FD8DF65BBD725D20A21B106AB /* YouTubePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13D34B3F365181A42983CECAAC4F2ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4B151EAF5003685962E5601C55F58A /* OnePasswordExtensionResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2B03ED562DA2F4CEE9CF1413BD3A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8968C07D6412C29A06CDD21E176A8790 /* 1Password.xcassets in Resources */,
+				69C3E31732A84B840529DD362F2F3E2F /* onepassword-button-light.png in Resources */,
+				5C6B42BC007CE112E798727FE31BD878 /* onepassword-button-light@2x.png in Resources */,
+				E747D3457DA2D0D95C5C030983663674 /* onepassword-button-light@3x.png in Resources */,
+				CEAF472964979C3218CF0AFB20703306 /* onepassword-button.png in Resources */,
+				5BFDD4A46F87D54A47D92ABF2F894F6C /* onepassword-button@2x.png in Resources */,
+				CED79DE801DE133B9FC1E7716D65EBF5 /* onepassword-button@3x.png in Resources */,
+				F3E5C62D72C98FEDEDA619582108B1D7 /* onepassword-extension-light@2x~compact.png in Resources */,
+				5C33495C74FBC9D432B795F9ACC9DFF6 /* onepassword-extension-light@2x~regular.png in Resources */,
+				03162F6FBBFF4775606AFC6444A3C7BC /* onepassword-extension-light@3x~compact.png in Resources */,
+				84170A779E7E5BFB8711667B43522EDA /* onepassword-extension-light~compact.png in Resources */,
+				410EA55906BCBD2E9BCB3746D0BB987B /* onepassword-extension-light~regular.png in Resources */,
+				B11B7A22C629F8C1136E77515B2CDA02 /* onepassword-extension@2x~compact.png in Resources */,
+				0FBB724B8B2A45186D369029D8ACDB44 /* onepassword-extension@2x~regular.png in Resources */,
+				E35C17E5C254DD854CDB3A05B1F3A98A /* onepassword-extension@3x~compact.png in Resources */,
+				9DE39E915B1BD1524E76A6D46E552776 /* onepassword-extension~compact.png in Resources */,
+				B54289A84A48604EE38881A0E071AD48 /* onepassword-extension~regular.png in Resources */,
+				CA055F7C7C352B1A1E177863F0AF11B6 /* onepassword-navbar-light.png in Resources */,
+				0F83E9950D54B3325FBCD9102BA9130B /* onepassword-navbar-light@2x.png in Resources */,
+				81FB4787BB9DC7A6793401091F545360 /* onepassword-navbar-light@3x.png in Resources */,
+				DF0E4A2B45545137FB5294B838EE6A49 /* onepassword-navbar.png in Resources */,
+				C32CF4DD337DE89B987C6119D8E74710 /* onepassword-navbar@2x.png in Resources */,
+				A9C8BBD485B6AE706640E9EA9249D39B /* onepassword-navbar@3x.png in Resources */,
+				CC5FEAEB89DE59D36D674D0E9D52428C /* onepassword-toolbar-light.png in Resources */,
+				B61B8ACD7135223233EA574580E3B040 /* onepassword-toolbar-light@2x.png in Resources */,
+				CB4A7A09049C12437382BB51FB2B519A /* onepassword-toolbar-light@3x.png in Resources */,
+				0A49140678241829867000A84E017BF8 /* onepassword-toolbar.png in Resources */,
+				A7E8FB4E56812F86EC0AD7535003E6D3 /* onepassword-toolbar@2x.png in Resources */,
+				8161C5BAC6975FCDF19BD18736CBE107 /* onepassword-toolbar@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E453EBA2C0EDB44B2E0607ED228871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D926FB7FB8DD8730060886BAF24CA93D /* Jukebox.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DBB0741C1CB218CB5F3850E5FE6772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0A21547FF606F1707B75D0B0ECD026 /* YTPlayer.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF555A9CE398569296B7FBA01165191C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0E351AF8B6F4544E61999C83BC228E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEF4B45858D2594CF083E20F185C94C /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C194F20724FBF6BC19C04BEBA9CA078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9011BBFD2412EF953E6EAA0042C5956 /* Jukebox-dummy.m in Sources */,
+				AF43BD13810A278AA11F311CDFFB0482 /* Jukebox.swift in Sources */,
+				6DE8C1B9466C946DB1F1EB846C18E9B6 /* JukeboxItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		114F6B35F840A275DDD6A7990434DCFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2695EDA18FBC82B847E57024DAF70FC /* AudioPlayer.swift in Sources */,
+				C812FCD023FD88F34DEF2FD7A5A8C628 /* AudioPlayerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33A69C3294284057522F5B845326BD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E146B96CC76C574C55174CB934C049 /* 1PasswordExtension-dummy.m in Sources */,
+				E7C7A7317124A1FEA09C8DFB95FACE7B /* OnePasswordExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FABD09484AB4DA91E0DFA2353C97589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C4011C944C1FA02B28566CE7070B34 /* JSONCodable-dummy.m in Sources */,
+				CB9046510B96D8DBBF3E075C46A83906 /* JSONCodable.swift in Sources */,
+				3AE2DFCD6C0B6AE90683CF65BC6B1C1D /* JSONDecodable.swift in Sources */,
+				A8AC9B75344E79C0EB998ED1D1BABEAB /* JSONEncodable.swift in Sources */,
+				11199893A6D07D07838445E56A0714CC /* JSONHelpers.swift in Sources */,
+				CA08D69AE9A44F7770C90963CDA1DB31 /* JSONString.swift in Sources */,
+				595E1874A400358DA6E786866ADE41A9 /* JSONTransformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C8104A621DFBB9C38356CDDF3CCB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248D322C656AF34659343CBA58050CB9 /* APIResponse.swift in Sources */,
+				CA78601E72F73D54EFAC5E0502498473 /* App.swift in Sources */,
+				C5A532FBD3054F82E2B882033A2042ED /* Comment.swift in Sources */,
+				E3D4DD90A9FCD1B39949740D7CAB9C15 /* DictionaryExtension.swift in Sources */,
+				83D203A2301423766FAE8F94D07A5A51 /* Enums.swift in Sources */,
+				8B202458F38CC47C6EF6CD6E813702BB /* ImageURLs.swift in Sources */,
+				C1C8ADFC9D3B2481D0DA4360F91E5B6B /* NSURLExtension.swift in Sources */,
+				F2FDD7AB9594BB2491C0FB601F5597F7 /* Playlist.swift in Sources */,
+				50C5C1A0687C4F77B57668E6E5552638 /* PlaylistRequest.swift in Sources */,
+				54B09FB2AE2BEDA897AF3A9F05302BA4 /* Request.swift in Sources */,
+				CFFFD48E4220941463F86A13BEB4594F /* SearchQuery.swift in Sources */,
+				6E46D538CA8C1D53C1819B8028AF91FC /* Soundcloud-dummy.m in Sources */,
+				C25905BC41A24A6BB3B4639A751B3588 /* Soundcloud.swift in Sources */,
+				33A2B36B70293F994100FECC117BFA83 /* SoundcloudWebViewController.swift in Sources */,
+				BB88D887D294E965C380C6E3669DD68E /* StringExtension.swift in Sources */,
+				D31DB0BD0EB9B7E9E4F08ABEC0FC95FA /* Track.swift in Sources */,
+				A337A3F32CA3834EE1E8491F3BE97202 /* TrackRequest.swift in Sources */,
+				C589DB4417226B468473D077822D3CDE /* User.swift in Sources */,
+				C7387AA6DCA9F0EC8E9FCD7AF31A9673 /* UserRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583B0CD27B1067A297D5BE5E451319CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C7CCD30498B1E906C4A6D55BA64B05 /* UICKeyChainStore-dummy.m in Sources */,
+				3C790EB1359E54F8439DA692321CF5DF /* UICKeyChainStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C35B1D96E09727BDE97537677DE9CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A007306A9F7EAF30B21BFDB4E741628B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B365A3A01EF135485F43412F83C7C65 /* Chameleon_.m in Sources */,
+				1236ECB96A915EC617957A42838CDD7B /* ChameleonConstants.m in Sources */,
+				E0C720836FBA4E75E3E57069219B7107 /* ChameleonFramework-dummy.m in Sources */,
+				A2AC9FD0F42F638C48E72F88E8BC4C80 /* ChameleonShorthand.swift in Sources */,
+				24E7D20FD204AF7AACB30A3B7C16388C /* NSArray+Chameleon.m in Sources */,
+				D2B61A78124FCB785E11A98BDD0471BC /* UIAppearance+Swift.m in Sources */,
+				A46A3EAB602FB4840C5AB8493F86AE4F /* UIButton+Chameleon.m in Sources */,
+				01C6F32401BCBE9FF9B3C095B031D92B /* UIColor+Chameleon.m in Sources */,
+				E0AFA39DA4A01D8A8FE3D4EC76250F46 /* UIColor+ChameleonPrivate.m in Sources */,
+				15E113F19F49C0C0472242BD6E849A1B /* UIImage+ChameleonPrivate.m in Sources */,
+				9B3EEA3CFA303B0D28A8034C16BFDA15 /* UILabel+Chameleon.m in Sources */,
+				4C6CEBA607BEA909A9CCB80C6AB6AE88 /* UINavigationController+Chameleon.m in Sources */,
+				C08DCA5180F1A15542694844C66B0EFB /* UIView+ChameleonPrivate.m in Sources */,
+				5177B3B95985D0A2CF8376A6FD4488C2 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA8742317BE0D8654131D04BF5ED0C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D18C03EB8F81B1C559E8D687ABFB07 /* YouTubePlayer-dummy.m in Sources */,
+				A89ECE1F5F4F9FF1D7B3E1C25627AEDB /* YouTubePlayer.swift in Sources */,
+				930B77CA1D67B57169666BA66FE3FE3E /* YTPlayer.html in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6CD95DCDB5A860456A7E6BCDAB9246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C7C1A6D1C98D8B189E450BF6F5527CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Jukebox;
+			target = 914F2D3BE90F614A79B5AB1465E3CB54 /* Jukebox */;
+			targetProxy = 744F12B46E3C4B74D5422FA7D8545636 /* PBXContainerItemProxy */;
+		};
+		249E2FDF9A93CE5998CB79F1AFDEB486 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Soundcloud;
+			target = CC188E8B568E890080A137C1528744EF /* Soundcloud */;
+			targetProxy = 56854AF2879742072596E7FFF5A97DE1 /* PBXContainerItemProxy */;
+		};
+		2C7FF8416979837C6523FAE277214FE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Jukebox-Jukebox";
+			target = E8755411FBEB5C88938F94EFEB42DF28 /* Jukebox-Jukebox */;
+			targetProxy = C9712C482C056463A252EC756A806954 /* PBXContainerItemProxy */;
+		};
+		32BAE6BB7D902F09268E106B46606D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = F301E054CA059DDA46EC8E2E6CEC8252 /* UICKeyChainStore */;
+			targetProxy = 27ABF194DA237E9B2C2D94B5EC54F5C4 /* PBXContainerItemProxy */;
+		};
+		4071102383F164CD596404D15C5C06FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 5172ACAB7FEA22813859DC97CA0AA16F /* ChameleonFramework */;
+			targetProxy = D863B3B8A9E20E6E0B2BECDC3CE7E741 /* PBXContainerItemProxy */;
+		};
+		4BB85681C926A9A99ACD4A5493A76F05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouTubePlayer;
+			target = 9E5E429FD8DF65BBD725D20A21B106AB /* YouTubePlayer */;
+			targetProxy = 3A04694B89DA8C7E5C84307EFA673147 /* PBXContainerItemProxy */;
+		};
+		54B839BAE57E38D81F408305D3572483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioPlayerSwift;
+			target = 36325DFCBCB7959CC6D962AA1890B2E6 /* AudioPlayerSwift */;
+			targetProxy = AE4DAB193146A2D4099BDD1158BECF08 /* PBXContainerItemProxy */;
+		};
+		81600A6E8DD007755A2CF3097DCDDFD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = D8B57B89BC28E74DBA035283E73E0107 /* 1PasswordExtension */;
+			targetProxy = 86C2C6FCEDF6C92B74D8E71282619351 /* PBXContainerItemProxy */;
+		};
+		D2E6DBFD82251331060511F003BC4EFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONCodable;
+			target = 244E052299C7C15FB82F0A69AE1A16D2 /* JSONCodable */;
+			targetProxy = 71FAD750A9DD63CAB90023CE19A002C3 /* PBXContainerItemProxy */;
+		};
+		DA349EDE73C285B32D35BDAFAA4D4334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = 1PasswordExtension;
+			target = D8B57B89BC28E74DBA035283E73E0107 /* 1PasswordExtension */;
+			targetProxy = 1240040C3414BA67F635DD5B4AC3A23A /* PBXContainerItemProxy */;
+		};
+		EC970CC919652E561DEE8924F4F30163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "1PasswordExtension-OnePasswordExtensionResources";
+			target = FF62A25D3E480238C0D473193AB70325 /* 1PasswordExtension-OnePasswordExtensionResources */;
+			targetProxy = 921AB2F74EA95232D72B0C59252E2B31 /* PBXContainerItemProxy */;
+		};
+		F44EAB8DAF28F80E1DD02BC277C3F7E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = F301E054CA059DDA46EC8E2E6CEC8252 /* UICKeyChainStore */;
+			targetProxy = 91D39984D6AFE34D396B97B51136F409 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08285A37B2590F1685EF9C9691604C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/1PasswordExtension/1PasswordExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OnePasswordExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		239508D97F716A7FE8CAF84933DF93AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F4C818F49B2D6E4F8CEA4AE0373328 /* YouTubePlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35E617D56ECF5D1DD8861C7BE23390C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6880C797C22F7B7F1A417C077E328 /* JSONCodable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONCodable/JSONCodable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONCodable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONCodable/JSONCodable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JSONCodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CC7B67D1C6176CEBE93BBC03D419F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4535C362FA6BB34EEC07753FF200C5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AC2B56B8CEA51EFD8CACBB97A7C3A9 /* Soundcloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Soundcloud/Soundcloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Soundcloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Soundcloud/Soundcloud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Soundcloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53A36024BCA33A77409D03EB717C7EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F4C818F49B2D6E4F8CEA4AE0373328 /* YouTubePlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C17C8DA3ACDBF29F0F156B8A9D9F77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/1PasswordExtension/1PasswordExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/1PasswordExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/1PasswordExtension/1PasswordExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OnePasswordExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		645B2F5E4DF733FE339E5A1EA1D2885E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Jukebox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		66EF6CE276E5BC3E3CFDDAC0B9F78E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67B0B002E990875F95F1820E149A9618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9574D21DC7CDECD8E35ED254E4C03A7 /* AudioPlayerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AudioPlayerSwift/AudioPlayerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AudioPlayerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AudioPlayerSwift/AudioPlayerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AudioPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A8B1710D3DA03D164350C07DA303185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Jukebox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9DA202A06FEEFCA2C8BE28B148639F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BAE6FA0BD334AACF3EF5F45E921F0D /* 1PasswordExtension.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = OnePasswordExtensionResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9EAE359934410E50D7325A3DA1890BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A29C976B040E37AD9EAA6AAA4F02B60 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A11AC59ECD0C003EEFEB8C1805C8EE8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6880C797C22F7B7F1A417C077E328 /* JSONCodable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSONCodable/JSONCodable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSONCodable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSONCodable/JSONCodable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JSONCodable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A16EF6B50DB7C7F6DCAD74F8CE39BDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AC2B56B8CEA51EFD8CACBB97A7C3A9 /* Soundcloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Soundcloud/Soundcloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Soundcloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Soundcloud/Soundcloud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Soundcloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AB2DA4051337DD0E5B8078B625DDC911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jukebox/Jukebox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jukebox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jukebox/Jukebox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Jukebox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B68B245EDE446C58A578255809A1C0A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301E6A84A054BCD35F448F6E1A8BF4AF /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9A4A65435973959558E86E2C4F0A3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFED1D7C32D146E7BFA5E92258F4D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9574D21DC7CDECD8E35ED254E4C03A7 /* AudioPlayerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AudioPlayerSwift/AudioPlayerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AudioPlayerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AudioPlayerSwift/AudioPlayerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AudioPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7E2AE461A23108B764FDC11C5BC7005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A29C976B040E37AD9EAA6AAA4F02B60 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9746921D9312BD0AA98EFB5DB2D8B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301E6A84A054BCD35F448F6E1A8BF4AF /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3D0CF529297733C47889B2DF66FD495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC4F9C72CE1A44D3D3BBBBD7C144EB1 /* Jukebox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Jukebox/Jukebox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Jukebox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Jukebox/Jukebox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Jukebox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07648C72A8B15E2D601B62DD9FE7252C /* Build configuration list for PBXNativeTarget "YouTubePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				239508D97F716A7FE8CAF84933DF93AE /* Debug */,
+				53A36024BCA33A77409D03EB717C7EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3186DCBFF066A8456C1F71E1F440B48A /* Build configuration list for PBXNativeTarget "Soundcloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4535C362FA6BB34EEC07753FF200C5EB /* Debug */,
+				A16EF6B50DB7C7F6DCAD74F8CE39BDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C2CF8869B37A0420A4C5DEA1E16BD3A /* Build configuration list for PBXNativeTarget "1PasswordExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08285A37B2590F1685EF9C9691604C4E /* Debug */,
+				5C17C8DA3ACDBF29F0F156B8A9D9F77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E21BC30675BE10E5FB0192B03002EA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B68B245EDE446C58A578255809A1C0A2 /* Debug */,
+				E9746921D9312BD0AA98EFB5DB2D8B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D3B30E156DD8ADC46E79F04A4833A4 /* Build configuration list for PBXNativeTarget "Jukebox-Jukebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8B1710D3DA03D164350C07DA303185 /* Debug */,
+				645B2F5E4DF733FE339E5A1EA1D2885E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC05A15F8D1913D7D057A2D6FC1227D /* Build configuration list for PBXNativeTarget "AudioPlayerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFED1D7C32D146E7BFA5E92258F4D097 /* Debug */,
+				67B0B002E990875F95F1820E149A9618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F81D60E311CCC36D89732B02F6D823 /* Build configuration list for PBXNativeTarget "JSONCodable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E617D56ECF5D1DD8861C7BE23390C6 /* Debug */,
+				A11AC59ECD0C003EEFEB8C1805C8EE8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0BDCEFE9824681DE67F83A78964EE0 /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EAE359934410E50D7325A3DA1890BB0 /* Debug */,
+				E7E2AE461A23108B764FDC11C5BC7005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE13CB1CA040586CE04228E9A87DC12F /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A4A65435973959558E86E2C4F0A3F2 /* Debug */,
+				66EF6CE276E5BC3E3CFDDAC0B9F78E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF81894FFC9BC6789F1C68FCCDB017F7 /* Build configuration list for PBXNativeTarget "1PasswordExtension-OnePasswordExtensionResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC7B67D1C6176CEBE93BBC03D419F66 /* Debug */,
+				9DA202A06FEEFCA2C8BE28B148639F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8476731A3D26E6DF18F81404220ADA1 /* Build configuration list for PBXNativeTarget "Jukebox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2DA4051337DD0E5B8078B625DDC911 /* Debug */,
+				F3D0CF529297733C47889B2DF66FD495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

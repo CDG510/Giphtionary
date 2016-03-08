@@ -10,14 +10,167 @@ import UIKit
 import MediaPlayer
 import AVFoundation
 
-class ViewController: UIViewController,
+class searchViewController: UIViewController,
 MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
     
     var myMusicPlayer: MPMusicPlayerController?
-    var buttonPickAndPlay: UIButton?
-    var buttonStopPlaying: UIButton?
+//    var buttonPickAndPlay: UIButton?
+//    var buttonStopPlaying: UIButton?
     var mediaPicker: MPMediaPickerController?
     var nowPlayingItem: MPMediaItem?
+    let searchLyrics = SearchModel()
+    var gifsArray = NSMutableArray?()
+    var counter = 6
+    var timer = NSTimer()
+    var arrIndex = 0
+    
+    @IBAction func gameStartButtonPressed(sender: AnyObject) {
+        timer.invalidate()
+        performSegueWithIdentifier("playGame", sender: self)
+    
+    }
+    @IBAction func JamButtonPressed(sender: AnyObject) {
+//        displayMediaPickerAndPlayItem()
+        timer.invalidate()
+        performSegueWithIdentifier("playMusic", sender: self)
+    }
+    //MARK: default function
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "GifJams"
+        var timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "nextGif", userInfo: nil, repeats: true)
+//        let socket = SocketIOClient(socketURL: "http://192.168.1.44:5000")
+//        socket.connect()
+//        socket.on("connect") { data, ack in
+//            print("iOS::WE ARE USING SOCKETS!")
+//        
+//        }
+        searchLyrics.introGifs("lol") {
+            (data, response, error) in
+            dispatch_async(dispatch_get_main_queue()) {
+                if let gifs = data {
+                    print(self.parseJSON(gifs), "is what we got back")
+                    if let unwrapped = self.parseJSON(gifs) {
+                        //here we have the string version of the embed url
+                        self.gifsArray = unwrapped
+                        let random = Int(arc4random_uniform(25))
+                        print(random)
+                        let trialURL = unwrapped[random]
+                        //here is where we set the view
+                        let URL = NSURL(string: trialURL as! String)
+                        self.GifView.loadRequest(NSURLRequest(URL: URL!))
+                        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "nextGif", userInfo: nil, repeats: true)
+                    }
+                }
+                
+            }
+        }
+
+    }
+    
+    func changeGifs(){
+        if let player = myMusicPlayer {
+//            myMusicPlayer = MPMusicPlayerController()
+            if let songtitle = player.nowPlayingItem!.title {
+                print("Taking", songtitle, "to the backend")
+                searchLyrics.findSongLyrics(String(songtitle)) {
+                    (data, response, error) in
+                    dispatch_async(dispatch_get_main_queue()) {
+                        if let gifs = data {
+                            print(self.parseJSON(gifs), "is what we got back")
+                            if let unwrapped = self.parseJSON(gifs) {
+                                //here we have the string version of the embed url
+                                self.gifsArray = unwrapped
+                                print(unwrapped)
+                                
+                                let trialURL = unwrapped[0]
+                                //here is where we set the view
+                                
+                                let URL = NSURL(string: trialURL as! String)
+                                self.GifView.loadRequest(NSURLRequest(URL: URL!))
+                            }
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    
+    @IBOutlet weak var GifView: UIWebView!
+//    @IBAction func SearchForMusicButton(sender: UIBarButtonItem) {
+//        displayMediaPickerAndPlayItem()
+//    }
+    
+//    @IBAction func previousButtonPressed(sender: UIButton) {
+//        myMusicPlayer = MPMusicPlayerController()
+//        //check to see if music is already playing
+//        if myMusicPlayer!.indexOfNowPlayingItem < 1 {
+//            return
+//        }
+//        else {
+//            if let player = myMusicPlayer{ player.skipToPreviousItem()
+//                changeGifs()
+//        }
+//        
+//        
+//        }
+//    }
+    
+//    @IBAction func playButton(sender: UIButton) {
+//        myMusicPlayer = MPMusicPlayerController()
+//        //check to see if music is already playing
+//        if let player = myMusicPlayer{ player.play()
+//        }
+//    }
+    
+//    @IBAction func stopButtonPressed(sender: UIButton) {
+//        myMusicPlayer = MPMusicPlayerController()
+//        
+//        if let player = myMusicPlayer{ player.stop()
+//            //eventually stop the gifs from playing
+//        }
+//    }
+//    @IBAction func nextButtonPressed(sender: UIButton) {
+//        myMusicPlayer = MPMusicPlayerController()
+//        if myMusicPlayer!.indexOfNowPlayingItem == gifsArray?.count {
+//            return
+//        }
+//
+//       
+//        //check to see if music is already playing
+//        
+//        
+//        if let player = myMusicPlayer{ player.skipToNextItem()
+//            changeGifs()
+//        }
+//    }
+    
+    
+    
+    func afterRequest(data: NSData?, response: NSURLResponse?, error: NSError?) {
+        print("WE DID IT")
+    }
+    
+    func parseJSON(inputData: NSData) -> NSMutableArray? {
+        do {
+            let arrOfObjects = try NSJSONSerialization.JSONObjectWithData(inputData, options: NSJSONReadingOptions.MutableContainers)
+            return arrOfObjects as? NSMutableArray
+        } catch let error as NSError {
+            print(error)
+            return nil
+        }
+    }
+    
+    func homeButtonPressedFrom(controller: UIViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
     
     func musicPlayerStateChanged(notification: NSNotification){
         
@@ -55,7 +208,7 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
                 /* The user is seeking backward in the queue */
                 print("Seeking Backward")
             }
-            
+  
         }
     }
     
@@ -71,6 +224,7 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
         if let id = persistentID{
             /* Do something with Persistent ID */
             print("Persistent ID = \(id)")
+        
         }
         
     }
@@ -80,7 +234,7 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
         /* The userInfo dictionary of this notification is normally empty */
     }
     
-    func mediaPicker(mediaPicker: MPMediaPickerController,
+    func mediaPicker(var mediaPicker: MPMediaPickerController,
         didPickMediaItems mediaItemCollection: MPMediaItemCollection){
             
             print("Media Picker returned")
@@ -116,17 +270,18 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
                 /* Start playing the items in the collection */
                 player.setQueueWithItemCollection(mediaItemCollection)
                 print("we live with" , mediaItemCollection)
+//                var items: [MPMediaItem]
+                print( mediaItemCollection.items, "Is our collection of items")
                 
                 player.play()
-                player.description
-                print(player.nowPlayingItem?.lyrics)
-                print(player.nowPlayingItem?.title)
-                
-                /* Finally dismiss the media picker controller */
+                changeGifs()
+
+                print("Back to the initial page")
                 mediaPicker.dismissViewControllerAnimated(true, completion: nil)
-                
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "nextGif", userInfo: nil, repeats: true)
+
+
             }
-            
     }
     
     func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
@@ -157,7 +312,7 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
             picker.allowsPickingMultipleItems = true
             picker.showsCloudItems = true
             picker.prompt = "Pick a song please..."
-            view.addSubview(picker.view)
+            self.view.addSubview(picker.view)
             
             presentViewController(picker, animated: true, completion: nil)
             
@@ -167,36 +322,35 @@ MPMediaPickerControllerDelegate, AVAudioPlayerDelegate {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = "Media picker..."
-        
-        buttonPickAndPlay = UIButton(type: .System)
-        
-        if let pickAndPlay = buttonPickAndPlay{
-            pickAndPlay.frame = CGRect(x: 0, y: 0, width: 200, height: 37)
-            pickAndPlay.center = CGPoint(x: view.center.x, y: view.center.y - 50)
-            pickAndPlay.setTitle("Pick and Play", forState: .Normal)
-            pickAndPlay.addTarget(self,
-                action: "displayMediaPickerAndPlayItem",
-                forControlEvents: .TouchUpInside)
-            view.addSubview(pickAndPlay)
-        }
-        
-        buttonStopPlaying = UIButton(type: .System)
-        
-        if let stopPlaying = buttonStopPlaying{
-            stopPlaying.frame = CGRect(x: 0, y: 0, width: 200, height: 37)
-            stopPlaying.center = CGPoint(x: view.center.x, y: view.center.y + 50)
-            stopPlaying.setTitle("Stop Playing", forState: .Normal)
-            stopPlaying.addTarget(self,
-                action: "stopPlayingAudio",
-                forControlEvents: .TouchUpInside)
-            view.addSubview(stopPlaying)
+    
+  
+    
+    func nextGif() {
+        --counter
+        if counter == 0 {
+            print("on to the next one")
+            increaseIndex()
+            counter = 6
         }
         
     }
     
+    func increaseIndex() {
+        let random = Int(arc4random_uniform(25))
+        print(random)
+        arrIndex = random
+        if let  checkArray = self.gifsArray {
+            if arrIndex == checkArray.count {
+                arrIndex = 0
+            }
+            let trialURL = checkArray[arrIndex]
+            let URL = NSURL(string: trialURL as! String)
+            self.GifView.loadRequest(NSURLRequest(URL: URL!))
+        }
+       
+    }
     
-}
+    
+    
+    }
+

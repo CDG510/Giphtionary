@@ -1,0 +1,33 @@
+PODS:
+  - 1PasswordExtension (1.7)
+  - AudioPlayerSwift (1.1.1)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - JSONCodable (2.1)
+  - Jukebox (0.1.0)
+  - Soundcloud (0.6.1):
+    - 1PasswordExtension (~> 1.5)
+    - UICKeyChainStore (~> 2.0.6)
+  - UICKeyChainStore (2.0.7)
+  - YouTubePlayer (0.3.0)
+
+DEPENDENCIES:
+  - AudioPlayerSwift
+  - ChameleonFramework/Swift
+  - JSONCodable (~> 2.1)
+  - Jukebox (~> 0.1.0)
+  - Soundcloud
+  - YouTubePlayer
+
+SPEC CHECKSUMS:
+  1PasswordExtension: a22573ad528dd63bd79c1f3b3813b17c2f86b91b
+  AudioPlayerSwift: 412881ae5610b259f00e6a13b69f9ef4c94ac347
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  JSONCodable: d3bb8d1323bb4cbc381b16219046c5282565a4f1
+  Jukebox: 9e8e988ca9284f24e22e9a4da3d40df528378bd4
+  Soundcloud: 973814195594c910eac4ac27bd7fcc0d11e44fd0
+  UICKeyChainStore: 696cd35083f7c8fb5e201d909b7e6aea6b478575
+  YouTubePlayer: 88713a96c356f2c88da8925eb61438eda88bcd57
+
+COCOAPODS: 0.39.0

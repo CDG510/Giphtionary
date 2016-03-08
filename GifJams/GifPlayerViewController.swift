@@ -7,3 +7,11 @@
 //
 
 import Foundation
+//
+//class GifPlayerController: AVPlayerViewController {
+//    var showsPlayBackControls = true
+//    var allowsPictureInPicturePlayback: Bool
+//    var player: AVPlayer?
+//    weak var delegate: AVPlayerViewControllerDelegate?
+//
+//}

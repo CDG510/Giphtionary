@@ -7,10 +7,14 @@
 //
 
 import UIKit
+//import Soundcloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+//    var soundcloud = Soundcloud()
+//    var Soundcloud.clientIdentifier = "YOUR_CLIENT_IDENTIFIER"
+//    var Soundcloud.clientSecret  = "YOUR_CLIENT_SECRET"
+//    var Soundcloud.redirectURI = "YOUR_REDIRECT_URI"
     var window: UIWindow?
 
 
